@@ -1,0 +1,31 @@
+img.resume-logo {
+    height: 70px;
+    width: auto;
+}
+
+img.headshot {
+    height: 200px;
+    clip-path: circle(100px at center);
+    width: auto;
+}
+
+.mat-card-avatar {
+    height: 70px;
+    width: 70px;
+}
+.gvsu-header-image {
+    background-image: url('../../assets/img/resume/GVSU.jpg');
+    background-size: cover;
+}
+.volgistics-header-image {
+    background-image: url('../../assets/img/resume/volgistics.png');
+    background-size: cover;
+}
+.configura-header-image {
+    background-image: url('../../assets/img/resume/configura.png');
+    background-size: cover;
+}
+.dunrite-header-image {
+    background-image: url('../../assets/img/dunrite/d.png');
+    background-size: cover;
+}

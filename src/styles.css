@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+.fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+
+  body {
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+  }
+
+  .row {
+    margin-top: 8px;
+  }
+
+  a {
+    color: #0abe70;   
+  }

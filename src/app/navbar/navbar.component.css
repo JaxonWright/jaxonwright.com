@@ -1,0 +1,12 @@
+img.logo {
+    width: auto;
+    height: 24px;
+}
+
+mat-toolbar-row {
+    height: 50px;
+}
+
+mat-toolbar {
+    margin-bottom: 16px;
+}

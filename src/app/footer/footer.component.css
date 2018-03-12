@@ -1,0 +1,15 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 40px;
+    background-color: #f5f5f5;
+    color: #2e2e2e;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+img.footer-logo {
+    opacity: 0.2;
+}
