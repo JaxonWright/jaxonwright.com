@@ -7,6 +7,6 @@ mat-toolbar-row {
     height: 50px;
 }
 
-mat-toolbar {
+mat-divider {
     margin-bottom: 16px;
 }

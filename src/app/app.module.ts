@@ -17,6 +17,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatDividerModule} from '@angular/material/divider';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
@@ -47,6 +48,7 @@ const appRoutes: Routes = [
     MatButtonModule,
     MatCardModule,
     MatTooltipModule,
+    MatDividerModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: false }
