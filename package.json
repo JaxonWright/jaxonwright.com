@@ -5,7 +5,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href \"/\"; cp CNAME dist",
+    "build": "ng build --prod --base-href \"/\" & copy CNAME dist",
+    "publish": "ngh --repo=https://e18c240a1ef2b9198f98c81523840e7c4ce1a564@github.com/jaxonwright/ng_jaxonwright_com.git --name=\"JaxonWright\" --email=jaxonhwright@gmail.com",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
