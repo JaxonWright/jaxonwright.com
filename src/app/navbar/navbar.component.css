@@ -10,3 +10,8 @@ mat-toolbar-row {
 mat-divider {
     margin-bottom: 16px;
 }
+
+mat-toolbar.toolbar-dark > mat-toolbar-row {
+    background: black !important;
+    color: white !important;
+}

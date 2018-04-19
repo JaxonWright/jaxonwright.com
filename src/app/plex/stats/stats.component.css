@@ -1,0 +1,9 @@
+iframe {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 100px);
+    border: none;
+    z-index: 100;
+    background: #242424;
+}

@@ -9,6 +9,10 @@ img.headshot {
     width: auto;
 }
 
+h2 {
+    margin-top: 12px;
+}
+
 .mat-card-avatar {
     height: 70px;
     width: 70px;

@@ -1,13 +1,15 @@
-<mat-toolbar>
+<mat-toolbar [class]="showAsDark() ? 'toolbar-dark' : ''">
   <mat-toolbar-row>
-    <img src="assets/img/branding/dark.png" routerLink="" class='logo mx-auto'>
+    <img [src]="showAsDark() ? 'assets/img/branding/white.png' : 'assets/img/branding/dark.png'" routerLink="" class='logo mx-auto'>
+    
   </mat-toolbar-row>
   <mat-toolbar-row class="text-center">
     <span class="fill-remaining-space"></span>
     <button mat-button routerLink="apps">APPS</button>
     <button mat-button routerLink="projects">PROJECTS</button>
     <button mat-button routerLink="contact">CONTACT</button>
+    <button *ngIf="router.url.startsWith('/plex')" mat-button routerLink="plex">PLEX</button>
     <span class="fill-remaining-space"></span>
   </mat-toolbar-row>
 </mat-toolbar>
-<mat-divider></mat-divider>
+<mat-divider *ngIf="!showAsDark()"></mat-divider>

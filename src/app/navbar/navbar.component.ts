@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router : Router) { }
 
   ngOnInit() {
+  }
+
+  showAsDark() : boolean {
+    return this.router.url == '/plex/requests' || 
+           this.router.url == '/plex/request'  ||
+           this.router.url == '/plex/stats';
   }
 
 }

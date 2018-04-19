@@ -18,13 +18,19 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatDividerModule} from '@angular/material/divider';
+import { PlexComponent } from './plex/plex.component';
+import { RequestsComponent } from './plex/requests/requests.component';
+import { StatsComponent } from './plex/stats/stats.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'home', component: HomeComponent },
   { path: 'apps', component: AppsComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'ultron', component: UltronComponent },
+  { path: 'plex', component: PlexComponent },
+  { path: 'plex/requests', component: RequestsComponent },
+  { path: 'plex/request', component: RequestsComponent },
+  { path: 'plex/stats', component: StatsComponent },
   { path: 'contact', component: ContactComponent },
   { path: '**', component: PageNotFoundComponent }
 ]
@@ -39,7 +45,10 @@ const appRoutes: Routes = [
     PageNotFoundComponent,
     NavbarComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    PlexComponent,
+    RequestsComponent,
+    StatsComponent
   ],
   imports: [
     BrowserModule,
