@@ -1,1 +1,7 @@
 a { color: black; }
+.col-md-6 {
+   margin-top: 16px;
+}
+.row {
+    margin-top: 0;
+ }

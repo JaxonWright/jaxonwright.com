@@ -11,7 +11,11 @@
 }
 
 img.footer-logo {
-    opacity: 0.2;
+    opacity: 0.1;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    padding: 0;
 }
 
 mat-divider {
