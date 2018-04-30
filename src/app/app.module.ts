@@ -12,15 +12,17 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { PlexComponent } from './plex/plex.component';
+import { RequestsComponent } from './plex/requests/requests.component';
+import { StatsComponent } from './plex/stats/stats.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatDividerModule} from '@angular/material/divider';
-import { PlexComponent } from './plex/plex.component';
-import { RequestsComponent } from './plex/requests/requests.component';
-import { StatsComponent } from './plex/stats/stats.component';
+import {MatChipsModule} from '@angular/material/chips';
+
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
@@ -58,6 +60,7 @@ const appRoutes: Routes = [
     MatCardModule,
     MatTooltipModule,
     MatDividerModule,
+    MatChipsModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: false }

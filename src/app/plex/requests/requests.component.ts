@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-requests',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RequestsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private titleServ : Title) {
+    this.titleServ.setTitle('Ultron Plex Requests');
+   }
 
   ngOnInit() {
   }

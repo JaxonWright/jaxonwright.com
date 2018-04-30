@@ -1,9 +1,12 @@
 <mat-toolbar [class]="showAsDark() ? 'toolbar-dark' : ''">
   <mat-toolbar-row>
-    <img [src]="showAsDark() ? 'assets/img/branding/white.png' : 'assets/img/branding/dark.png'" routerLink="" class='logo mx-auto'>
-    
+    <span class="fill-remaining-space"></span>
+    <button mat-button routerLink="">
+      <img [src]="showAsDark() ? 'assets/img/branding/white.png' : 'assets/img/branding/dark.png'" class='logo mx-auto'>
+    </button>
+    <span class="fill-remaining-space"></span>
   </mat-toolbar-row>
-  <mat-toolbar-row class="text-center">
+  <mat-toolbar-row>
     <span class="fill-remaining-space"></span>
     <button mat-button routerLink="apps">APPS</button>
     <button mat-button routerLink="projects">PROJECTS</button>
