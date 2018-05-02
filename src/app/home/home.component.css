@@ -13,6 +13,10 @@ h2 {
     margin-top: 12px;
 }
 
+h4 {
+    margin-top: 8px;
+}
+
 .mat-card-avatar {
     height: 70px;
     width: 70px;

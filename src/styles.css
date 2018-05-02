@@ -18,3 +18,7 @@
   a {
     color: #0abe70;   
   }
+
+  .qr > img {
+    width: 300px;
+}

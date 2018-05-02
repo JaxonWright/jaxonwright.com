@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+import { NgxQRCodeModule } from 'ngx-qrcode2';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AppsComponent } from './apps/apps.component';
@@ -22,6 +24,11 @@ import {MatCardModule} from '@angular/material/card';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatInputModule} from '@angular/material/input';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
+import { CryptoDialogComponent } from './crypto-dialog/crypto-dialog.component';
 
 
 const appRoutes: Routes = [
@@ -50,8 +57,10 @@ const appRoutes: Routes = [
     ContactComponent,
     PlexComponent,
     RequestsComponent,
-    StatsComponent
+    StatsComponent,
+    CryptoDialogComponent
   ],
+  entryComponents: [CryptoDialogComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -61,6 +70,10 @@ const appRoutes: Routes = [
     MatTooltipModule,
     MatDividerModule,
     MatChipsModule,
+    MatDialogModule,
+    MatInputModule,
+    NgxQRCodeModule,
+    MatSnackBarModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: false }

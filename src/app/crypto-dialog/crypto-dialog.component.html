@@ -1,0 +1,22 @@
+<ng-container *ngIf="walletID == Crypto.BTC_WALLET">
+  <h1>Pay With Bitcoin</h1>
+  <ngx-qrcode class="text-center" qrc-value="bitcoin:{{walletID}}" qrc-class="qr" qrc-element-type="url">
+  </ngx-qrcode>
+</ng-container>
+<ng-container *ngIf="walletID == Crypto.BCH_WALLET">
+  <h1>Pay With Bitcoin Cash</h1>
+  <ngx-qrcode class="text-center" qrc-value="bitcoincash:{{walletID}}" qrc-class="qr" qrc-element-type="url">
+  </ngx-qrcode>
+</ng-container>
+<ng-container *ngIf="walletID == Crypto.ETH_WALLET">
+  <h1>Pay With Etherium</h1>
+  <ngx-qrcode class="text-center" qrc-value="etherium:{{walletID}}" qrc-class="qr" qrc-element-type="url">
+  </ngx-qrcode>
+</ng-container>
+<mat-form-field class="w-100">
+  <input matInput #walletInput placeholder="Wallet Address" [value]="walletID" readonly>
+</mat-form-field>
+<div class="text-right">
+<button mat-button (click)="copyWalletID(walletInput)"><i class="fas fa-clipboard"></i> Copy</button>
+<button mat-button (click)="onNoClick()"><i class="fas fa-times"></i> Cancel</button>
+</div>
