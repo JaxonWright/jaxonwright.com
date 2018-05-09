@@ -31,7 +31,8 @@ h4 {
 }
 .configura-header-image {
     background-image: url('../../assets/img/resume/configura.png');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .dunrite-header-image {
     background-image: url('../../assets/img/dunrite/d.png');
