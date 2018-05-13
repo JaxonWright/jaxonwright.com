@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 
 @Injectable({
   providedIn: 'root'
@@ -6,12 +7,17 @@ import { Injectable } from '@angular/core';
 export class ThemeService {
   themeIsLight : boolean = true;
 
-  constructor() { }
+  constructor(public meta : Meta) { }
 
   set(theme) {
-    if (theme == 'light-theme') this.themeIsLight = true;
-    else this.themeIsLight = false;
-    localStorage.setItem('theme', theme)
+    if (theme == 'light-theme') {
+      this.themeIsLight = true;
+      this.meta.updateTag({name: 'theme-color', content: "#f5f5f5"});
+    } else {
+      this.themeIsLight = false;
+      this.meta.updateTag({name: 'theme-color', content: "#262626"});
+    } 
+    localStorage.setItem('theme', theme);
   }
 
   getSaved() : string {
