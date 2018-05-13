@@ -1,27 +1,32 @@
-# Jaxonwright
+<img src="https://www.jaxonwright.com/assets/img/branding/dark.png" width="100px"/>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
+## About
+This website is the personal site of me, Jaxon Wright. It is written with the Google-maintained Angular Framework. It is meant to showcase a little about me and what I have been working on. Feel free to reference any of this for your own project.
 
-## Development server
+## Libraries Used
+This is not an exhaustive list, but it is the core of what is used.
+- [Angular 6](https://github.com/angular/angular) : The backbone
+- [Angular Material](https://github.com/angular/material2) : Provides a plethora of elements that follow Google's Material Design standard
+- [ngx-qrcode2](https://github.com/techiediaries/ngx-qrcode) : Used to generate QR codes for my crypto wallets on the Contact Page.
+- [angular-cli-ghpages](https://github.com/angular-schule/angular-cli-ghpages) : Used to easily publish the built Angular project to the gh-pages branch of the repository for production. I have this installed globally, so it is not in the package.json, but I figured I would mention it.
+- [FontAwesome 5](https://fontawesome.com/) : A very powerful, fast and light way to handle icons.
+- [Bootstrap 4](https://getbootstrap.com/) : Used for layout purposes exclusively. Maybe will scrap this for the new CSS-Grid at a later time.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Testing, Building and Deploying
+If you are starting fresh, make sure to run `npm install` to grab all of the dependencies
 
-## Code scaffolding
+### Testing
+To start up the local development server, simply run `ng serve`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Building
+This is a script defined in the package.json. You may want to change the base-href in that command to not be at the root domain path.
 
-## Build
+`npm run build`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+### Deploying
+This command will not work if you do not have an [environment variable](https://msdn.microsoft.com/en-us/library/windows/desktop/ms682653(v=vs.85).aspx) called GH_TOKEN defined for your OS. This was to prevent my [personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) from being public. This is a script defined in the package.json which uses [angular-cli-ghpages](https://github.com/angular-schule/angular-cli-ghpages) to commit to the gh-pages branch of this repository. This needs to be modified to your preferences.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`npm run publish`
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
