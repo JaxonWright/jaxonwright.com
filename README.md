@@ -1,14 +1,16 @@
-<div style="text-align:center"><img src="https://www.jaxonwright.com/assets/img/branding/dark.png" width="100px"/>jaxonwright.com</div>
+<img src="https://www.jaxonwright.com/assets/img/branding/dark.png" width="100px"/>
 
 ## About
 This website the the personal website of me, Jaxon Wright. It is written with the Google-maintained Angular Framework.
 
-## Node Packages Used
+## Libraries Used
 This is not an exhaustive list, but it is the core of what is used.
 - [Angular 6](https://github.com/angular/angular) : The backbone
 - [Angular Material](https://github.com/angular/material2) : Provides a plethora of elements that follow Google's Material Design standard
 - [ngx-qrcode2](https://github.com/techiediaries/ngx-qrcode) : Used to generate QR codes for my crypto wallets on the Contact Page.
 - [angular-cli-ghpages](https://github.com/angular-schule/angular-cli-ghpages) : Used to easily publish the built Angular project to the gh-pages branch of the repository for production. I have this installed globally, so it is not in the package.json, but I figured I would mention it.
+- [FontAwesome 5](https://fontawesome.com/) : A very powerful, fast and light way to handle icons.
+- [Bootstrap 4](https://getbootstrap.com/) : Used for layout purposes exclusively. Maybe will scrap this for the new CSS-Grid at a later time.
 
 ## Testing, Building and Deploying
 If you are starting fresh, make sure to run `npm install` to grab all of the dependencies
