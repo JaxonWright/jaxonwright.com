@@ -1,18 +1,24 @@
-<mat-toolbar [class]="showAsDark() ? 'toolbar-dark' : ''">
+<mat-toolbar >
   <mat-toolbar-row>
     <span class="fill-remaining-space"></span>
-    <button mat-button routerLink="" matTooltip="Home" matTooltipPosition="right">
-      <img [src]="showAsDark() ? 'assets/img/branding/white.png' : 'assets/img/branding/dark.png'" class='logo mx-auto'>
+    <button mat-button routerLink="" matTooltip="Home" matTooltipPosition="below">
+      <img [src]="theme.isDark() ? 'assets/img/branding/white.png' : 'assets/img/branding/dark.png'" class='logo mx-auto'>
     </button>
     <span class="fill-remaining-space"></span>
+    <button mat-button class="theme-button" *ngIf="theme.isLight()" (click)="setTheme('dark-theme')" matTooltip="Switch to Dark Theme" matTooltipPosition="below">
+        <i class="fas fa-paint-brush fa-2x" data-fa-transform="shrink-6.5" data-fa-mask="fas fa-circle"></i>
+    </button>
+    <button mat-button class="theme-button" *ngIf="theme.isDark()" (click)="setTheme('light-theme')" matTooltip="Switch to Light Theme" matTooltipPosition="below">
+        <i class="fas fa-paint-brush fa-2x" data-fa-transform="shrink-6.5" data-fa-mask="fas fa-circle"></i>
+    </button>
   </mat-toolbar-row>
   <mat-toolbar-row>
     <span class="fill-remaining-space"></span>
-    <button mat-button routerLink="apps">APPS</button>
-    <button mat-button routerLink="projects">PROJECTS</button>
-    <button mat-button routerLink="contact">CONTACT</button>
-    <button *ngIf="router.url.startsWith('/plex')" mat-button routerLink="plex">PLEX</button>
+    <button mat-button routerLink="apps">Apps</button>
+    <button mat-button routerLink="projects">Projects</button>
+    <button mat-button routerLink="contact">Contact</button>
+    <button *ngIf="router.url.startsWith('/plex')" mat-button routerLink="plex">Plex</button>
     <span class="fill-remaining-space"></span>
   </mat-toolbar-row>
 </mat-toolbar>
-<mat-divider *ngIf="!showAsDark()"></mat-divider>
+<mat-divider></mat-divider>

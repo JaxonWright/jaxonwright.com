@@ -7,11 +7,9 @@ mat-toolbar-row {
     height: 50px;
 }
 
-mat-divider {
-    margin-bottom: 16px;
-}
-
-mat-toolbar.toolbar-dark > mat-toolbar-row {
-    background: black !important;
-    color: white !important;
+.theme-button {
+    position: absolute;
+    right: 8px;
+    top: 7px;
+    min-width: 0px;
 }

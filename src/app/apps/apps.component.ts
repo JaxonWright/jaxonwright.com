@@ -7,6 +7,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./apps.component.css']
 })
 export class AppsComponent implements OnInit {
+  
 
   constructor(private titleServ : Title) { 
     this.titleServ.setTitle('Jaxon Wright - Apps');

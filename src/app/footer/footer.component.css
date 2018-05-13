@@ -4,25 +4,27 @@
     left: 0;
     right: 0;
     line-height: 25px;
-    background-color: #f5f5f5;
-    color: #2e2e2e;
     padding-left: 16px;
     padding-right: 16px;
 }
 
 img.footer-logo {
-    opacity: 0.1;
     position: absolute;
-    right: 8px;
-    bottom: 8px;
+    right: 16px;
+    bottom: 10px;
     padding: 0;
 }
 
 mat-divider {
-    margin-left: -16px;
-    margin-right: -16px;
+    position: absolute;
+    bottom: 64px;
+    left: 0;
+    right: 0;
 }
+
 
 .footer p {
     margin: 8px 0;
+    font-weight: 300;
+    font-size: medium;
 }

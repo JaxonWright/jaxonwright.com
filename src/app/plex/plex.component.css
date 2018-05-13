@@ -1,4 +1,7 @@
-a { color: black; }
+a  {
+    color: inherit;
+}
+
 .col-md-6 {
    margin-top: 16px;
 }

@@ -9,16 +9,29 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://www.google.com/design/spec/style/color.html
-$candy-app-primary: mat-palette($mat-grey, 900);
-$candy-app-accent:  mat-palette($mat-green, A400);
+$light-app-primary: mat-palette($mat-grey, 900);
+$light-app-accent:  mat-palette($mat-green, A400);
 
 // The warn palette is optional (defaults to red).
-$candy-app-warn:    mat-palette($mat-red);
+$app-warn:    mat-palette($mat-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
+$light-app-theme: mat-light-theme($light-app-primary, $light-app-accent, $app-warn);
+
+
+$dark-app-primary: mat-palette($mat-grey, 50);
+$dark-app-accent:  mat-palette($mat-green, A400);
+$dark-app-theme: mat-dark-theme($dark-app-primary, $dark-app-accent, $app-warn);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($app-theme);
+@include angular-material-theme($light-app-theme);
+
+.dark-theme {
+  @include angular-material-theme($dark-app-theme);
+}
+
+.light-theme {
+  @include angular-material-theme($light-app-theme);
+}

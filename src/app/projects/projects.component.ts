@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { ThemeService } from '../_services/theme/theme.service';
 
 @Component({
   selector: 'app-projects',
@@ -8,7 +9,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor(private titleServ : Title) { 
+  constructor(private titleServ : Title, public theme : ThemeService) { 
     this.titleServ.setTitle('Jaxon Wright - Projects');
   }
 

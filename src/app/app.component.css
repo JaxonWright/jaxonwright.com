@@ -1,3 +1,8 @@
-.container {
-    padding-bottom: 90px;
+.container { 
+    padding-top: 16px;
+    padding-bottom: 98px;
+}
+
+.app-frame {
+    min-height: calc(100vh);
 }

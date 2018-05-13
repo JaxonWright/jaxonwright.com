@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AppComponent } from '../app.component';
+import { ThemeService } from '../_services/theme/theme.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,16 +9,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
-  constructor(public router : Router) { }
+  
+  constructor(public router : Router, public app : AppComponent, public theme : ThemeService) { }
 
   ngOnInit() {
   }
 
-  showAsDark() : boolean {
-    return this.router.url == '/plex/requests' || 
-           this.router.url == '/plex/request'  ||
-           this.router.url == '/plex/stats';
+  setTheme(theme) {
+    this.app.setTheme(theme);
   }
 
 }

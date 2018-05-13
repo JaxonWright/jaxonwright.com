@@ -29,6 +29,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 import { CryptoDialogComponent } from './crypto-dialog/crypto-dialog.component';
+import { OverlayModule } from '@angular/cdk/overlay';
+import { ThemeService } from './_services/theme/theme.service';
 
 
 const appRoutes: Routes = [
@@ -74,12 +76,15 @@ const appRoutes: Routes = [
     MatInputModule,
     NgxQRCodeModule,
     MatSnackBarModule,
+    OverlayModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: false }
     )
   ],
-  providers: [],
+  providers: [
+    ThemeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
