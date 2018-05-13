@@ -1,7 +1,7 @@
 <img src="https://www.jaxonwright.com/assets/img/branding/dark.png" width="100px"/>
 
 ## About
-This website the the personal website of me, Jaxon Wright. It is written with the Google-maintained Angular Framework.
+This website is the personal site of me, Jaxon Wright. It is written with the Google-maintained Angular Framework. It is meant to showcase a little about me and what I have been working on. Feel free to reference any of this for your own project.
 
 ## Libraries Used
 This is not an exhaustive list, but it is the core of what is used.
