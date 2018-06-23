@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href \"/\"",
+    "build": "ng build --prod --build-optimizer",
     "publish": "ngh --repo=https://GH_TOKEN@github.com/jaxonwright/ng_jaxonwright_com.git --name=\"JaxonWright\" --email=jaxonhwright@gmail.com --no-silent",
     "test": "ng test",
     "lint": "ng lint",
