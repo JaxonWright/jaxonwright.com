@@ -27,10 +27,12 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatInputModule} from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatListModule} from '@angular/material/list';
 
 import { CryptoDialogComponent } from './crypto-dialog/crypto-dialog.component';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { ThemeService } from './_services/theme/theme.service';
+import { BuildInfoComponent } from './build-info/build-info.component';
 
 
 const appRoutes: Routes = [
@@ -38,6 +40,7 @@ const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'apps', component: AppsComponent },
   { path: 'projects', component: ProjectsComponent },
+  { path: 'build-info', component: BuildInfoComponent },
   { path: 'plex', component: PlexComponent },
   { path: 'plex/requests', component: RequestsComponent },
   { path: 'plex/request', component: RequestsComponent },
@@ -60,7 +63,8 @@ const appRoutes: Routes = [
     PlexComponent,
     RequestsComponent,
     StatsComponent,
-    CryptoDialogComponent
+    CryptoDialogComponent,
+    BuildInfoComponent
   ],
   entryComponents: [CryptoDialogComponent],
   imports: [
@@ -76,6 +80,7 @@ const appRoutes: Routes = [
     MatInputModule,
     NgxQRCodeModule,
     MatSnackBarModule,
+    MatListModule,
     OverlayModule,
     RouterModule.forRoot(
       appRoutes,

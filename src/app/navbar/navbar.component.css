@@ -13,3 +13,8 @@ mat-toolbar-row {
     top: 7px;
     min-width: 0px;
 }
+
+a:hover {
+    text-decoration: none;
+}
+

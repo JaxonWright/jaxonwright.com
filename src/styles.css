@@ -20,8 +20,16 @@ body {
   margin-top: 8px;
 }
 
-a {
+a, a:hover {
   color: #0abe70;
+}
+
+.dark-theme  .mat-button.link-active {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.light-theme .mat-button.link-active {
+  background: rgba(0, 0, 0, 0.04);
 }
 
 .qr>img {

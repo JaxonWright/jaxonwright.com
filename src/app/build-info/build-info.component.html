@@ -1,0 +1,39 @@
+<h1>Build Info.</h1>
+<div class="row">
+  <div class="col-md-4">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          Build
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-list compact>
+          <mat-list-item *ngFor="let dep of buildInfo">
+            <i matListAvatar [class]="dep.icon"></i>
+            <h3 matLine>{{dep.name}}</h3>
+            <a [href]="dep.link" matLine>{{dep.version}}</a>
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="col-md-4">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          Dependencies
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-list compact>
+          <mat-list-item *ngFor="let dep of dependencies">
+            <i matListAvatar [class]="dep.icon"></i>
+            <h3 matLine>{{dep.name}}</h3>
+            <a [href]="dep.link" matLine>{{dep.version}}</a>
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
