@@ -3,8 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-import { NgxQRCodeModule } from 'ngx-qrcode2';
-
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AppsComponent } from './apps/apps.component';
@@ -78,7 +76,6 @@ const appRoutes: Routes = [
     MatChipsModule,
     MatDialogModule,
     MatInputModule,
-    NgxQRCodeModule,
     MatSnackBarModule,
     MatListModule,
     OverlayModule,
