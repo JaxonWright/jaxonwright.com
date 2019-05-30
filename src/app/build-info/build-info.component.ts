@@ -28,7 +28,6 @@ export class BuildInfoComponent implements OnInit {
                          {name: 'Angular Material', version: require('@angular/material/package.json').version, link: 'https://www.npmjs.com/package/@angular/material', icon: 'fab fa-angular'},
                          {name: 'RxJS', version: require('rxjs/package.json').version, link: 'https://www.npmjs.com/package/rxjs', icon: 'fab fa-js'},
                          {name: 'TypeScript', version: require('typescript/package.json').version, link: 'https://www.npmjs.com/package/typescript', icon: 'fas fa-code'},
-                         {name: 'ngx-qrcode2', version: require('ngx-qrcode2/package.json').version, link: 'https://www.npmjs.com/package/ngx-qrcode2', icon: 'fas fa-qrcode'},
                          {name: 'Font Awesome', version: '5.4.2', link: 'https://www.fontawesome.com', icon: 'fab fa-font-awesome'},
                          {name: 'Bootstrap', version: '4.1.3', link: 'https://www.bootstrap.com', icon: 'fas fa-bold'}];
     
