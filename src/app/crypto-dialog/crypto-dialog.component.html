@@ -17,6 +17,6 @@
   <input matInput #walletInput placeholder="Wallet Address" [value]="walletID" readonly>
 </mat-form-field>
 <div class="text-right">
-<button mat-button (click)="copyWalletID(walletInput)"><i class="fas fa-clipboard"></i> Copy</button>
-<button mat-button (click)="onNoClick()"><i class="fas fa-times"></i> Cancel</button>
+<button mat-button (click)="copyWalletID(walletInput)"><fa-icon [icon]="['fas', 'clipboard']"></fa-icon> Copy</button>
+<button mat-button (click)="onNoClick()"><fa-icon [icon]="['fas', 'times']"></fa-icon> Cancel</button>
 </div>

@@ -7,7 +7,7 @@ export interface Dependency {
   name : string,
   link : string,
   version : string,
-  icon : string
+  icon : string[]
 }
 
 @Component({
@@ -24,15 +24,15 @@ export class BuildInfoComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.dependencies = [{name: 'Angular', version: require('@angular/core/package.json').version, link: 'https://www.npmjs.com/package/@angular/core', icon: 'fab fa-angular'},
-                         {name: 'Angular Material', version: require('@angular/material/package.json').version, link: 'https://www.npmjs.com/package/@angular/material', icon: 'fab fa-angular'},
-                         {name: 'RxJS', version: require('rxjs/package.json').version, link: 'https://www.npmjs.com/package/rxjs', icon: 'fab fa-js'},
-                         {name: 'TypeScript', version: require('typescript/package.json').version, link: 'https://www.npmjs.com/package/typescript', icon: 'fas fa-code'},
-                         {name: 'Font Awesome', version: '5.4.2', link: 'https://www.fontawesome.com', icon: 'fab fa-font-awesome'},
-                         {name: 'Bootstrap', version: '4.1.3', link: 'https://www.bootstrap.com', icon: 'fas fa-bold'}];
+    this.dependencies = [{name: 'Angular', version: require('@angular/core/package.json').version, link: 'https://www.npmjs.com/package/@angular/core', icon: ['fab',  'angular']},
+                         {name: 'Angular Material', version: require('@angular/material/package.json').version, link: 'https://www.npmjs.com/package/@angular/material', icon: ['fab', 'angular']},
+                         {name: 'RxJS', version: require('rxjs/package.json').version, link: 'https://www.npmjs.com/package/rxjs', icon: ['fab',  'js']},
+                         {name: 'TypeScript', version: require('typescript/package.json').version, link: 'https://www.npmjs.com/package/typescript', icon: ['fas', 'code']},
+                         {name: 'Angular FontAwesome', version: require('@fortawesome/angular-fontawesome/package.json').version, link: 'https://www.fontawesome.com', icon: ['fab',  'font-awesome']},
+                         {name: 'Bootstrap', version: '4.1.3', link: 'https://www.bootstrap.com', icon: ['fas', 'bold']}];
     
-    this.buildInfo = [{name: 'Hash', version: VERSION.hash, link: `https://github.com/JaxonWright/jaxonwright.com/commit/${VERSION.hash}`, icon: 'fas fa-hashtag'},
-                      {name: 'Date', version: VERSION.date, link: '', icon: 'fas fa-calendar'}]
+    this.buildInfo = [{name: 'Hash', version: VERSION.hash, link: `https://github.com/JaxonWright/jaxonwright.com/commit/${VERSION.hash}`, icon: ['fas', 'hashtag']},
+                      {name: 'Date', version: VERSION.date, link: '', icon: ['fas', 'calendar']}]
 
   }
 

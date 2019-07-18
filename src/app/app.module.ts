@@ -27,10 +27,13 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatListModule} from '@angular/material/list';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 import { CryptoDialogComponent } from './crypto-dialog/crypto-dialog.component';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { ThemeService } from './_services/theme/theme.service';
 import { BuildInfoComponent } from './build-info/build-info.component';
+import { IconsModule } from './icons.module';
 
 
 const appRoutes: Routes = [
@@ -66,6 +69,8 @@ const appRoutes: Routes = [
   ],
   entryComponents: [CryptoDialogComponent],
   imports: [
+    FontAwesomeModule,
+    IconsModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,

@@ -10,7 +10,7 @@
       <mat-card-content>
         <mat-list compact>
           <mat-list-item *ngFor="let dep of buildInfo">
-            <i matListAvatar [class]="dep.icon"></i>
+            <fa-icon matListAvatar [icon]="dep.icon"></fa-icon>
             <h3 matLine>{{dep.name}}</h3>
             <a [href]="dep.link" matLine>{{dep.version}}</a>
           </mat-list-item>
@@ -28,7 +28,7 @@
       <mat-card-content>
         <mat-list compact>
           <mat-list-item *ngFor="let dep of dependencies">
-            <i matListAvatar [class]="dep.icon"></i>
+            <fa-icon matListAvatar [icon]="dep.icon"></fa-icon>
             <h3 matLine>{{dep.name}}</h3>
             <a [href]="dep.link" matLine>{{dep.version}}</a>
           </mat-list-item>

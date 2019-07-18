@@ -6,10 +6,10 @@
     </a>
     <span class="fill-remaining-space"></span>
     <button mat-button class="theme-button" *ngIf="theme.isLight()" (click)="setTheme('dark-theme')" matTooltip="Switch to Dark Theme" matTooltipPosition="below">
-        <i class="fas fa-paint-brush fa-2x" data-fa-transform="shrink-6.5" data-fa-mask="fas fa-circle"></i>
+        <fa-icon [icon]="['fas', 'paint-brush']" size="2x" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
     </button>
     <button mat-button class="theme-button" *ngIf="theme.isDark()" (click)="setTheme('light-theme')" matTooltip="Switch to Light Theme" matTooltipPosition="below">
-        <i class="fas fa-paint-brush fa-2x" data-fa-transform="shrink-6.5" data-fa-mask="fas fa-circle"></i>
+        <fa-icon [icon]="['fas', 'paint-brush']" size="2x" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
     </button>
   </mat-toolbar-row>
   <mat-toolbar-row>
