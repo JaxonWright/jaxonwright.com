@@ -34,21 +34,10 @@ import { OverlayModule } from '@angular/cdk/overlay';
 import { ThemeService } from './_services/theme/theme.service';
 import { BuildInfoComponent } from './build-info/build-info.component';
 import { IconsModule } from './icons.module';
+import { RoutesModule } from '../routes.module';
 
 
-const appRoutes: Routes = [
-  { path: '', component: HomeComponent},
-  { path: 'home', component: HomeComponent },
-  { path: 'apps', component: AppsComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'build-info', component: BuildInfoComponent },
-  { path: 'plex', component: PlexComponent },
-  { path: 'plex/requests', component: RequestsComponent },
-  { path: 'plex/request', component: RequestsComponent },
-  { path: 'plex/stats', component: StatsComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: '**', component: PageNotFoundComponent }
-]
+
 
 @NgModule({
   declarations: [
@@ -71,6 +60,7 @@ const appRoutes: Routes = [
   imports: [
     FontAwesomeModule,
     IconsModule,
+    RoutesModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,
@@ -84,10 +74,6 @@ const appRoutes: Routes = [
     MatSnackBarModule,
     MatListModule,
     OverlayModule,
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: false }
-    )
   ],
   providers: [
     ThemeService
