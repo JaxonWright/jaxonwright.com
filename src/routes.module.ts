@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './app/home/home.component';
-import { AppsComponent } from './app/apps/apps.component';
 import { ProjectsComponent } from './app/projects/projects.component';
 import { BuildInfoComponent } from './app/build-info/build-info.component';
 import { PlexComponent } from './app/plex/plex.component';
@@ -14,7 +13,7 @@ import { PageNotFoundComponent } from './app/page-not-found/page-not-found.compo
 const appRoutes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'home', component: HomeComponent },
-    { path: 'apps', component: AppsComponent },
+    { path: 'about', component: HomeComponent },
     { path: 'projects', component: ProjectsComponent },
     { path: 'build-info', component: BuildInfoComponent },
     { path: 'plex', component: PlexComponent },

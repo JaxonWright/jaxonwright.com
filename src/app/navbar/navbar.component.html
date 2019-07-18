@@ -14,7 +14,7 @@
   </mat-toolbar-row>
   <mat-toolbar-row>
     <span class="fill-remaining-space"></span>
-    <a mat-button routerLink="apps" routerLinkActive="link-active">Apps</a>
+    <a mat-button routerLink="" routerLinkActive="link-active" [routerLinkActiveOptions]="{ exact: true }">About</a>
     <a mat-button routerLink="projects" routerLinkActive="link-active">Projects</a>
     <a mat-button routerLink="contact" routerLinkActive="link-active">Contact</a>
     <a *ngIf="router.url.startsWith('/plex')" mat-button routerLink="plex" routerLinkActive="link-active">Plex</a>
