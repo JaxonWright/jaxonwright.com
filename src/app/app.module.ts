@@ -30,6 +30,7 @@ import { ThemeService } from '@services/theme/theme.service';
 import { BuildInfoComponent } from '@pages/build-info/build-info.component';
 import { IconsModule } from './icons.module';
 import { RoutesModule } from './routes.module';
+import { ProjectCardComponent } from './elements/project-card/project-card.component';
 
 
 
@@ -45,7 +46,8 @@ import { RoutesModule } from './routes.module';
     ContactComponent,
     PlexComponent,
     CryptoDialogComponent,
-    BuildInfoComponent
+    BuildInfoComponent,
+    ProjectCardComponent,
   ],
   entryComponents: [CryptoDialogComponent],
   imports: [

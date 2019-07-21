@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-md-12">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <img *ngIf="project.logo" class="title-img" [src]="getLogoSource()">
+          <ng-container *ngIf="project.logoOnly == false">
+            <ng-container *ngIf="project.logo">&emsp;</ng-container>
+              {{project.title}}
+            </ng-container>
+        </mat-card-title>
+        <mat-card-subtitle>
+          <mat-chip-list>
+            <mat-chip *ngFor="let cat of project.categories">
+              <fa-icon [icon]="cat.icon" size="lg" transform="shrink-6.5" [mask]="['fas','circle']"></fa-icon>
+              &nbsp;{{cat.title}}
+            </mat-chip>
+          </mat-chip-list>
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        {{project.description}}
+      </mat-card-content>
+      <mat-card-actions>
+        <ng-container *ngFor="let action of project.actions">
+          <a mat-button [href]="action.link" target="_blank">{{action.title}}</a>
+        </ng-container>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
