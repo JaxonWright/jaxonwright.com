@@ -5,7 +5,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { UltronComponent } from './ultron/ultron.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -42,7 +41,6 @@ import { RoutesModule } from '../routes.module';
     AppComponent,
     HomeComponent,
     ProjectsComponent,
-    UltronComponent,
     PageNotFoundComponent,
     NavbarComponent,
     FooterComponent,
