@@ -2,6 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "module": "esnext",
+    "baseUrl": "src",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -15,6 +16,13 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@app/*": ["app/*"],
+      "@pages/*": ["app/pages/*"],
+      "@elements/*": ["app/elements/*"],
+      "@dialogs/*": ["app/elements/dialogs/*"],
+      "@services/*": ["app/services/*"]
+    },
   }
 }

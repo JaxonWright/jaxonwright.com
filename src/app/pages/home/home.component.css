@@ -22,20 +22,20 @@ h4 {
     width: 70px;
 }
 .gvsu-header-image {
-    background-image: url('../../assets/img/resume/GVSU.jpg');
+    background-image: url('../../../assets/img/resume/GVSU.jpg');
     background-size: cover;
 }
 .volgistics-header-image {
-    background-image: url('../../assets/img/resume/volgistics.png');
+    background-image: url('../../../assets/img/resume/volgistics.png');
     background-size: cover;
 }
 .configura-header-image {
-    background-image: url('../../assets/img/resume/configura.png');
+    background-image: url('../../../assets/img/resume/configura.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 .dunrite-header-image {
-    background-image: url('../../assets/img/dunrite/d.png');
+    background-image: url('../../../assets/img/dunrite/d.png');
     background-size: cover;
 }
 .headshot {

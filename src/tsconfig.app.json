@@ -3,7 +3,14 @@
   "compilerOptions": {
     "outDir": "../out-tsc/app",
     "baseUrl": "./",
-    "types": []
+    "types": [],
+    "paths": {
+      "@app/*": ["app/*"],
+      "@pages/*": ["app/pages/*"],
+      "@elements/*": ["app/elements/*"],
+      "@dialogs/*": ["app/elements/dialogs/*"],
+      "@services/*": ["app/services/*"]
+    },
   },
   "exclude": [
     "test.ts",

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { VERSION } from '../../environments/version';
+import { VERSION } from '../../../environments/version';
 declare var require: any;
 
 export interface Dependency {
