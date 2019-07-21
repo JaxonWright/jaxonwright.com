@@ -10,8 +10,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { PlexComponent } from './plex/plex.component';
-import { RequestsComponent } from './plex/requests/requests.component';
-import { StatsComponent } from './plex/stats/stats.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
@@ -46,8 +44,6 @@ import { RoutesModule } from '../routes.module';
     FooterComponent,
     ContactComponent,
     PlexComponent,
-    RequestsComponent,
-    StatsComponent,
     CryptoDialogComponent,
     BuildInfoComponent
   ],
