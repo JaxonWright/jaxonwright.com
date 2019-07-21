@@ -5,9 +5,8 @@
         <mat-card-title>
           <img *ngIf="project.logo" class="title-img" [src]="getLogoSource()">
           <ng-container *ngIf="project.logoOnly == false">
-            <ng-container *ngIf="project.logo">&emsp;</ng-container>
-              {{project.title}}
-            </ng-container>
+            {{project.title}}
+          </ng-container>
         </mat-card-title>
         <mat-card-subtitle>
           <mat-chip-list>
