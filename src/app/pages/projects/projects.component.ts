@@ -253,7 +253,7 @@ export class ProjectsComponent implements OnInit {
             title : 'Java'
           },
           {
-            icon : ['fab','firebase'],
+            icon : ['fas','database'],
             title : 'Firebase'
           }
         ],
