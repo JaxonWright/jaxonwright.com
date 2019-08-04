@@ -5,6 +5,9 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 
 // Solid Icons (fas)
 import {
+    faCar,
+    faDesktop,
+    faMobileAlt,
     faClipboard,
     faTimes,
     faPaintBrush,
@@ -67,6 +70,9 @@ export class IconsModule {
   constructor() {
     library.add(
       // fas
+      faCar,
+      faDesktop,
+      faMobileAlt,
       faClipboard,
       faTimes,
       faPaintBrush,

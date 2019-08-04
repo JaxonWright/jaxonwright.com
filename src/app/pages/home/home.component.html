@@ -4,14 +4,78 @@
     <mat-card>
       <mat-card-header>
         <div mat-card-avatar class="headshot"></div>
-        <p>
-            I am somebody who loves the cutting-edge of technology. Tech is evolving around us, quicker and quicker. Advances
-            in technology have made so many things in the world easier to do, and made the impossible possible. I look forward
-            to being able to be in the field of making the world a better place through innovative technologies. I mostly
-            enjoy developing software that other people will use to make their lives better and aid them throughout their
-            day. That is the main attraction to software development for me; making things that others enjoy and find useful.
-        </p>
+        <mat-card-subtitle>
+          I am a {{getAge()}}-year-old guy who loves the cutting-edge of technology. Tech is evolving around us, quicker
+          and quicker. Advances in technology have made so many things in the world easier to do, and made the
+          impossible possible. I love being in the field of making the world a better place through innovative
+          technologies. I mostly
+          enjoy developing software that other people will use to make their lives better and aid them throughout their
+          day. That is the main attraction to software development for me; making things that others enjoy and find
+          useful.
+        </mat-card-subtitle>
       </mat-card-header>
+    </mat-card>
+  </div>
+</div>
+<h2>Things</h2>
+<div class="row">
+  <div class="col-md-4">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <fa-icon [icon]="['fas','car']"></fa-icon> Car
+        </mat-card-title>
+        <mat-card-subtitle>
+          Tesla Model 3
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        Owning a Tesla has been a dream-come-true for me. Autonomous, electric cars are the future. I am proud to be an
+        early part of that future.
+      </mat-card-content>
+      <mat-card-actions>
+        <a mat-button href="//tesla.jaxonwright.com" target="_blank" matTooltip="Get 1,000 Miles of Free Supercharging">Referral
+          Link</a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  <div class="col-md-4">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <fa-icon [icon]="['fas','mobile-alt']"></fa-icon> Phone
+        </mat-card-title>
+        <mat-card-subtitle>
+          OnePlus 7 Pro
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        I am a big Android guy and this phone has simply been the best I have ever owned. It is zippy, has no notch, and
+        the 90Hz OLED display is incredible.
+      </mat-card-content>
+      <mat-card-actions>
+        <a mat-button href="//www.oneplus.com/invite#V2KVT9M3VOFSL0B" target="_blank"
+          matTooltip="Get $10 off accessories w/ phone">Referral Link</a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  <div class="col-md-4">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <fa-icon [icon]="['fas','desktop']"></fa-icon> Computer
+        </mat-card-title>
+        <mat-card-subtitle>
+          Ultron
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        I built my own Windows rig a few years ago. Armed with an overclocked i7-6700K and GTX 1080, it handles everything I throw at it very well.
+      </mat-card-content>
+      <mat-card-actions>
+        <a mat-button href="//pcpartpicker.com/b/6yJV3C" target="_blank"
+          matTooltip="See pictures and full specs">View Build</a>
+      </mat-card-actions>
     </mat-card>
   </div>
 </div>
@@ -26,16 +90,19 @@
         <mat-card-subtitle>2013 - 2017</mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
-        I completed my undergraduate education in 4 years, preparing myself for a career in programming and software development.
+        I completed my undergraduate education in 4 years, preparing myself for a career in programming and software
+        development.
       </mat-card-content>
       <mat-card-actions>
         <mat-chip-list>
           <mat-chip>
-            <fa-icon [icon]="['fas', 'balance-scale']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+            <fa-icon [icon]="['fas', 'balance-scale']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']">
+            </fa-icon>
             &nbsp;3.5 GPA
           </mat-chip>
           <mat-chip>
-            <fa-icon [icon]="['fas', 'newspaper']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+            <fa-icon [icon]="['fas', 'newspaper']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']">
+            </fa-icon>
             &nbsp;1 Publication
           </mat-chip>
         </mat-chip-list>
@@ -54,9 +121,11 @@
         <mat-card-subtitle>Jul 2017 - Present</mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
-        The Volgistics team is a group of dedicated volunteer management and information technology professionals who enjoy helping
+        The Volgistics team is a group of dedicated volunteer management and information technology professionals who
+        enjoy helping
         volunteer leaders achieve their missions through the use of technology. I help maintain and develop this service
-        to help provide a powerful tool for volunteer organizations. Volgistics is written using Delphi and transformed into
+        to help provide a powerful tool for volunteer organizations. Volgistics is written using Delphi and transformed
+        into
         a web application.
       </mat-card-content>
     </mat-card>
@@ -72,8 +141,10 @@
         <mat-card-subtitle>Jun 2015 - Sep 2015 &amp; May 2017 - Sep 2016</mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
-        Gaining real-world software development experience by working on CETDesigner, a piece of intelligent, highly visual and intuitive
-        space-planning software that simplifies specifying and selling of products in a variety of industries. CET is written
+        Gaining real-world software development experience by working on CETDesigner, a piece of intelligent, highly
+        visual and intuitive
+        space-planning software that simplifies specifying and selling of products in a variety of industries. CET is
+        written
         with Configura's own programming language, CM.
       </mat-card-content>
     </mat-card>
@@ -99,7 +170,8 @@
 <div class="row">
   <div class="col-md-12">
     <mat-card>
-      <p>Here are some technologies that I have used before and know how to use. I am better with some more than others.</p>
+      <p>Here are some technologies that I have used before and know how to use. I am better with some more than others.
+      </p>
       <h4>Languages</h4>
       <mat-chip-list>
         <mat-chip>
@@ -176,22 +248,26 @@
       <h4>Version Control</h4>
       <mat-chip-list>
         <mat-chip>
-          <fa-icon [icon]="['fas', 'code-branch']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+          <fa-icon [icon]="['fas', 'code-branch']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']">
+          </fa-icon>
           &nbsp;Git
         </mat-chip>
         <mat-chip>
-          <fa-icon [icon]="['fas', 'code-branch']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+          <fa-icon [icon]="['fas', 'code-branch']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']">
+          </fa-icon>
           &nbsp;Subversion
         </mat-chip>
         <mat-chip>
-          <fa-icon [icon]="['fas', 'code-branch']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+          <fa-icon [icon]="['fas', 'code-branch']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']">
+          </fa-icon>
           &nbsp;Perforce
         </mat-chip>
       </mat-chip-list>
       <h4>Platforms</h4>
       <mat-chip-list>
         <mat-chip>
-          <fa-icon [icon]="['fas', 'mouse-pointer']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+          <fa-icon [icon]="['fas', 'mouse-pointer']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']">
+          </fa-icon>
           &nbsp;Web
         </mat-chip>
         <mat-chip>
@@ -210,7 +286,8 @@
       <h4>IDEs</h4>
       <mat-chip-list>
         <mat-chip>
-          <fa-icon [icon]="['fas', 'mouse-pointer']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+          <fa-icon [icon]="['fas', 'mouse-pointer']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']">
+          </fa-icon>
           &nbsp;Visual Studio Code
         </mat-chip>
         <mat-chip>

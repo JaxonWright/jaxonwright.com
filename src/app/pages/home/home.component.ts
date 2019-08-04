@@ -25,6 +25,11 @@ export class HomeComponent implements OnInit {
         return 'Good Afternoon';
     if (hrs >= 17 && hrs <= 24)
         return'Good Evening';
+  }
 
+  getAge() : number {
+    const bday = new Date(1995,2,25);
+    const timeDiff = Math.abs(Date.now() - bday.getTime())
+    return Math.floor((timeDiff / (1000 * 3600 * 24))/365.25); 
   }
 }
