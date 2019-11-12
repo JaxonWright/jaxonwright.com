@@ -23,6 +23,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatListModule} from '@angular/material/list';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LastFmScrobblesModule } from 'angular-last-fm-scrobbles';
 
 import { CryptoDialogComponent } from '@dialogs/crypto-dialog/crypto-dialog.component';
 import { OverlayModule } from '@angular/cdk/overlay';
@@ -67,6 +68,7 @@ import { ProjectCardComponent } from './elements/project-card/project-card.compo
     MatSnackBarModule,
     MatListModule,
     OverlayModule,
+    LastFmScrobblesModule,
   ],
   providers: [
     ThemeService

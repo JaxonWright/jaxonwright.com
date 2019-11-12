@@ -44,3 +44,14 @@ h4 {
     height: 145px;
     width: 145px;
 }
+
+.now-playing-card {
+    background: #1a1a1a;
+    color: #1a1a1a;
+    overflow: hidden;
+}
+
+.now-playing-card > mat-card-content > last-fm-scrobbles {
+    margin-top: -12px;
+    margin-right: -61px;
+}
