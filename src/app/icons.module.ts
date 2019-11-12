@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 // Solid Icons (fas)
@@ -51,6 +51,7 @@ import {
     faBtc,
     faEthereum,
     faFontAwesome,
+    faSpotify,
 } from '@fortawesome/free-brands-svg-icons';
 
 /**
@@ -67,8 +68,8 @@ import {
 })
 export class IconsModule {
 
-  constructor() {
-    library.add(
+  constructor(library: FaIconLibrary) {
+    library.addIcons(
       // fas
       faCar,
       faDesktop,
@@ -113,6 +114,7 @@ export class IconsModule {
       faBtc,
       faEthereum,
       faFontAwesome,
+      faSpotify
     );
   }
 
