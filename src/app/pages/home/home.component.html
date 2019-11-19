@@ -2,9 +2,9 @@
 <div class="row">
   <div class="col-md-12">
     <mat-card>
-      <mat-card-header>
+      <mat-card-header class="about-me-card-header">
         <div mat-card-avatar class="headshot"></div>
-        <mat-card-subtitle>
+        <mat-card-content class="about-me-desc"> 
           I am a {{getAge()}}-year-old guy who loves the cutting-edge of technology. Tech is evolving around us, quicker
           and quicker. Advances in technology have made so many things in the world easier to do, and made the
           impossible possible. I love being in the field of making the world a better place through innovative
@@ -12,20 +12,20 @@
           enjoy developing software that other people will use to make their lives better and aid them throughout their
           day. That is the main attraction to software development for me; making things that others enjoy and find
           useful.
-        </mat-card-subtitle>
+        </mat-card-content>
       </mat-card-header>
     </mat-card>
   </div>
 </div>
 <ng-container *ngIf="lastFmKey">
-  <h2>
+  <h2 [style.display]="isCurrentlyPlayingMusic ? 'block' : 'none'">
     <fa-icon [icon]="['fab','spotify']"></fa-icon> Now Playing
   </h2>
-  <div class="row">
+  <div class="row" [style.display]="isCurrentlyPlayingMusic ? 'block' : 'none'">
     <div class="col-md-12">
       <mat-card class="now-playing-card">
         <mat-card-content>
-          <last-fm-scrobbles username="jxnw" [apiKey]="lastFmKey"></last-fm-scrobbles>
+          <last-fm-scrobbles [username]="lastFmUser" [apiKey]="lastFmKey"></last-fm-scrobbles>
         </mat-card-content>
       </mat-card>
     </div>

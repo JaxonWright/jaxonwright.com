@@ -1,14 +1,3 @@
-img.resume-logo {
-    height: 70px;
-    width: auto;
-}
-
-img.headshot {
-    height: 200px;
-    clip-path: circle(100px at center);
-    width: auto;
-}
-
 h2 {
     margin-top: 12px;
 }
@@ -38,11 +27,14 @@ h4 {
     background-image: url('../../../assets/img/dunrite/d.png');
     background-size: cover;
 }
+
 .headshot {
     background-image: url('https://avatars1.githubusercontent.com/u/14099593');
     background-size: cover;
     height: 145px;
     width: 145px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .now-playing-card {
@@ -54,4 +46,14 @@ h4 {
 .now-playing-card > mat-card-content > last-fm-scrobbles {
     margin-top: -12px;
     margin-right: -61px;
+}
+
+.about-me-card-header {
+   display: flex;
+   flex-direction: row; 
+}
+
+.about-me-desc {
+  display: flex;
+  align-self: center;  
 }
