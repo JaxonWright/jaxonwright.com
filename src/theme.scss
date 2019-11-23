@@ -6,6 +6,13 @@
 // Be sure that you only ever include this mixin once!
 @include mat-core();
 
+$mat-black: (
+    50: #000000,
+    contrast: (
+        50: white
+    )
+);
+
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://www.google.com/design/spec/style/color.html
@@ -23,10 +30,21 @@ $dark-app-primary: mat-palette($mat-grey, 50);
 $dark-app-accent:  mat-palette($mat-green, A400);
 $dark-app-theme: mat-dark-theme($dark-app-primary, $dark-app-accent, $app-warn);
 
+$black-app-primary: mat-palette($mat-black, 50);
+$black-app-accent:  mat-palette($mat-green, A400);
+$black-app-theme: mat-dark-theme($black-app-primary, $black-app-accent, $app-warn);
+
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($light-app-theme);
+
+.black-theme {
+  @include angular-material-theme($black-app-theme);
+  .mat-app-background,
+  .mat-toolbar { background-color: #000000; color: rgb(236, 236, 236) }
+  .mat-card { background-color: #1a1a1a; color: rgb(236, 236, 236) }
+}
 
 .dark-theme {
   @include angular-material-theme($dark-app-theme);

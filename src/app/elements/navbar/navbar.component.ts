@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AppComponent } from '@app/app.component';
-import { ThemeService } from '@services/theme/theme.service';
+import { ThemeService, ThemeType } from '@services/theme/theme.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,14 +9,26 @@ import { ThemeService } from '@services/theme/theme.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  preventSingle : boolean = false;
+  timer;
   
   constructor(public router : Router, public app : AppComponent, public theme : ThemeService) { }
 
   ngOnInit() {
   }
 
-  setTheme(theme) {
-    this.app.setTheme(theme);
+  setTheme(theme : ThemeType) {
+
+    if (theme != ThemeType.Black) {
+      this.timer = setTimeout(()=> {
+        if (!this.preventSingle) this.app.setTheme(theme);
+        else this.preventSingle = false;
+      },200)
+    } else {
+      this.preventSingle = true;
+      clearTimeout(this.timer);
+      this.app.setTheme(theme);
+    }
   }
 
 }

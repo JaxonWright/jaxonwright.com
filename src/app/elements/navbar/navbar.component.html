@@ -5,10 +5,12 @@
       <img [src]="theme.isDark() ? 'assets/img/branding/white.png' : 'assets/img/branding/dark.png'" class='logo mx-auto'>
     </a>
     <span class="fill-remaining-space"></span>
-    <button mat-button class="theme-button" *ngIf="theme.isLight()" (click)="setTheme('dark-theme')" matTooltip="Switch to Dark Theme" matTooltipPosition="below">
+    <button mat-button class="theme-button" *ngIf="theme.isLight()" (click)="setTheme('dark-theme')" (dblclick)="setTheme('black-theme')" matTooltip="Switch to Dark Theme&#13;double click = 😎"
+     matTooltipPosition="below" matTooltipClass="mat-tooltip-multi">
         <fa-icon [icon]="['fas', 'paint-brush']" size="2x" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
     </button>
-    <button mat-button class="theme-button" *ngIf="theme.isDark()" (click)="setTheme('light-theme')" matTooltip="Switch to Light Theme" matTooltipPosition="below">
+    <button mat-button class="theme-button" *ngIf="theme.isDark()" (click)="setTheme('light-theme')" (dblclick)="setTheme('black-theme')" matTooltip="Switch to Light Theme&#13;double click = 😎"
+     matTooltipPosition="below"  matTooltipClass="mat-tooltip-multi">
         <fa-icon [icon]="['fas', 'paint-brush']" size="2x" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
     </button>
   </mat-toolbar-row>

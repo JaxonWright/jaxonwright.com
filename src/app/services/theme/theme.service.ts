@@ -1,39 +1,49 @@
 import { Injectable } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 
+export enum ThemeType {
+  Light = 'light-theme',
+  Dark  = 'dark-theme',
+  Black = 'black-theme'
+}
+
 @Injectable({
   providedIn: 'root'
 })
 export class ThemeService {
-  themeIsLight : boolean = true;
+  themeType : ThemeType;
 
   constructor(public meta : Meta) { }
 
   set(theme) {
-    if (theme == 'light-theme') {
-      this.themeIsLight = true;
+    if (theme == ThemeType.Light) {
+      this.themeType = theme;
       this.meta.updateTag({name: 'theme-color', content: "#f5f5f5"});
-    } else {
-      this.themeIsLight = false;
+    } else if (theme == ThemeType.Dark) {
+      this.themeType = theme;
       this.meta.updateTag({name: 'theme-color', content: "#262626"});
-    } 
+    } else if (theme == ThemeType.Black) {
+      this.themeType = theme;
+      this.meta.updateTag({name: 'theme-color', content: "#000000"});
+    }
     localStorage.setItem('theme', theme);
   }
 
   getSaved() : string {
     var theme = localStorage.getItem('theme');
-    if (theme == 'dark-theme' || 
-        theme == 'light-theme')
+    if (theme == ThemeType.Light ||
+        theme == ThemeType.Dark ||
+        theme == ThemeType.Black)
       return theme;
     else localStorage.removeItem('theme');
-    return 'light-theme';
+    return ThemeType.Light;
   }
 
   isLight() : boolean {
-    return this.themeIsLight;
+    return this.themeType == ThemeType.Light;
   }
 
   isDark() : boolean {
-    return !this.isLight();
+    return this.themeType == ThemeType.Dark || this.themeType == ThemeType.Black;
   }
 }

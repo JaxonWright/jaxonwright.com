@@ -36,6 +36,10 @@ a, a:hover {
   width: 300px;
 }
 
+.mat-tooltip-multi {
+  white-space: pre-line !important;
+}
+
 /***
  * Scrollbar 
  ***/

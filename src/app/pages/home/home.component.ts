@@ -8,7 +8,7 @@ import { LastFmScrobblesComponent } from 'angular-last-fm-scrobbles';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit, AfterViewInit {
-  lastFmKey : string; // YOU NEED TO GET THIS YOURSELF
+  lastFmKey : string  = ''; // YOU NEED TO GET THIS YOURSELF
   lastFmUser : string = 'jxnw'; // PROBABLY SHOULD USE YOUR OWN HERE
   @ViewChild(LastFmScrobblesComponent,{static: false}) scrobbler : LastFmScrobblesComponent;
   isCurrentlyPlayingMusic : boolean = false;

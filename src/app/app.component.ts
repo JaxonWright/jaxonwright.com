@@ -18,7 +18,12 @@ export class AppComponent implements OnInit {
   }
 
   setTheme(theme) {
-    this.overlayContainer.getContainerElement().classList.add(theme);
+    this.overlayContainer.getContainerElement().classList.forEach((v,k,p)=> {
+      if (v.endsWith('theme')) {
+        p.replace(v,theme);
+        return;
+      }
+    })
     this.componentCssClass = theme;
     this.theme.set(theme);
   }
