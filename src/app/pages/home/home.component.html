@@ -27,6 +27,14 @@
         <mat-card-content>
           <last-fm-scrobbles [username]="lastFmUser" [apiKey]="lastFmKey"></last-fm-scrobbles>
         </mat-card-content>
+        <mat-card-actions>
+          <a mat-button href="//open.spotify.com/user/1265176482" target="_blank" style="color:#ececec">
+            <fa-icon [icon]="['fab','spotify']"></fa-icon> My Spotify
+          </a>
+          <a mat-button href="//last.fm/user/{{lastFmUser}}" target="_blank" style="color:#ececec">
+            <fa-icon [icon]="['fab','lastfm']"></fa-icon> My Last.fm
+          </a>
+        </mat-card-actions>
       </mat-card>
     </div>
   </div>

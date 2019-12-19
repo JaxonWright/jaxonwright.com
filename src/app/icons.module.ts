@@ -52,6 +52,7 @@ import {
     faEthereum,
     faFontAwesome,
     faSpotify,
+    faLastfm,
 } from '@fortawesome/free-brands-svg-icons';
 
 /**
@@ -114,7 +115,8 @@ export class IconsModule {
       faBtc,
       faEthereum,
       faFontAwesome,
-      faSpotify
+      faSpotify,
+      faLastfm,
     );
   }
 
