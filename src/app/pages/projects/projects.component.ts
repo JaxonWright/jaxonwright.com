@@ -41,6 +41,42 @@ export class ProjectsComponent implements OnInit {
   setProjects() {
     this.projects = [
       {
+        title : 'testube',
+        logo : '../../assets/img/projects/testube.png',
+        darkLogo : '../../assets/img/projects/testubeLight.png',
+        logoOnly : true,
+        description : `This is a web application that allows Tesla drivers to have easy access to a multitude of media services while their vehicle is in park. 
+        What makes this special is that it triggers "Theater Mode", which will make the application and anything clicked within it be open on the entire screen.`,
+        categories : [
+          {
+            icon : ['fab','angular'],
+            title : 'Angular'
+          },
+          {
+            icon : ['fas','code'],
+            title : 'TypeScript'
+          },
+          {
+            icon : ['fab','html5'],
+            title : 'HTML'
+          },
+          {
+            icon : ['fab','css3-alt'],
+            title : 'CSS'
+          },
+        ],
+        actions : [
+          {
+            link : 'https://testube.app',
+            title : 'Website'
+          },
+          {
+            link : 'https://github.com/arbitrarydot/testube',
+            title : 'GitHub'
+          }
+        ]
+      },
+      {
         title : 'Passageway',
         logo : '../../assets/img/projects/passageway.png',
         logoOnly : true,
