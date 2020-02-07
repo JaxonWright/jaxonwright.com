@@ -10,7 +10,7 @@ import { LastFmScrobblesComponent } from 'angular-last-fm-scrobbles';
 export class HomeComponent implements OnInit, AfterViewInit {
   lastFmKey : string  = ''; // YOU NEED TO GET THIS YOURSELF
   lastFmUser : string = 'jxnw'; // PROBABLY SHOULD USE YOUR OWN HERE
-  @ViewChild(LastFmScrobblesComponent,{static: false}) scrobbler : LastFmScrobblesComponent;
+  @ViewChild(LastFmScrobblesComponent) scrobbler : LastFmScrobblesComponent;
   isCurrentlyPlayingMusic : boolean = false;
 
   constructor(private titleServ : Title) { 
