@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { LastFmScrobblesComponent } from 'angular-last-fm-scrobbles';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-home',
@@ -43,9 +44,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   getAge() : number {
-    const bday = new Date(1995,2,25);
-    const timeDiff = Math.abs(Date.now() - bday.getTime())
-    return Math.floor((timeDiff / (1000 * 3600 * 24))/365.25); 
+	return moment().diff('1995-2-25', 'years');
   }
 
 
