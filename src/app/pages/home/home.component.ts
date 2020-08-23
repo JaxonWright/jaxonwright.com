@@ -9,10 +9,6 @@ import * as moment from 'moment';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit, AfterViewInit {
-  lastFmKey : string  = ''; // YOU NEED TO GET THIS YOURSELF
-  lastFmUser : string = 'jxnw'; // PROBABLY SHOULD USE YOUR OWN HERE
-  @ViewChild(LastFmScrobblesComponent) scrobbler : LastFmScrobblesComponent;
-  isCurrentlyPlayingMusic : boolean = false;
 
   constructor(private titleServ : Title) { 
     this.titleServ.setTitle('Jaxon Wright - About');
@@ -22,13 +18,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    setTimeout(()=>{
-      if (this.lastFmKey) {
-        this.scrobbler.isNowPlaying$.subscribe((val)=> {
-          this.isCurrentlyPlayingMusic = val;
-        });
-      }
-    },1000)
   }
 
   getTimeGreeting() : string {
