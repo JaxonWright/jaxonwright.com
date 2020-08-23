@@ -1,6 +1,5 @@
-import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { LastFmScrobblesComponent } from 'angular-last-fm-scrobbles';
 import * as moment from 'moment';
 
 @Component({
