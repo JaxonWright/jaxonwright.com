@@ -24,10 +24,6 @@ This is a script defined in the package.json. You may want to change the base-hr
 
 
 ### Deploying
-This command will not work if you do not have an [environment variable](https://msdn.microsoft.com/en-us/library/windows/desktop/ms682653(v=vs.85).aspx) called GH_TOKEN defined for your OS. This was to prevent my [personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) from being public. This is a script defined in the package.json which uses [angular-cli-ghpages](https://github.com/angular-schule/angular-cli-ghpages) to commit to the gh-pages branch of this repository. This needs to be modified to your preferences.
-
-`npm run publish`
-
-Also, make sure that you modify the `CNAME` file to have your website's URL in it and not mine. Hosting on GH Pages will not work otherwise.
+Deployment is automatically ran by the Github Action within this repository. It will run on any push or pull request for the `master` branch.
 
 
