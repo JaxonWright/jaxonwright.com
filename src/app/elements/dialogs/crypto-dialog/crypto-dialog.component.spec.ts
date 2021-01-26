@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { CryptoDialogComponent } from './crypto-dialog.component';
 
@@ -6,7 +6,7 @@ describe('CryptoDialogComponent', () => {
   let component: CryptoDialogComponent;
   let fixture: ComponentFixture<CryptoDialogComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ CryptoDialogComponent ]
     })
