@@ -46,4 +46,8 @@ export class ThemeService {
   isDark() : boolean {
     return this.themeType == ThemeType.Dark || this.themeType == ThemeType.Black;
   }
+
+  getTheme() : ThemeType {
+    return this.themeType;
+  }
 }

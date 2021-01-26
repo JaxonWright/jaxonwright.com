@@ -11,6 +11,7 @@ import { ThemeService, ThemeType } from '@services/theme/theme.service';
 export class NavbarComponent implements OnInit {
   preventSingle : boolean = false;
   timer;
+  ThemeType = ThemeType;
   
   constructor(public router : Router, public app : AppComponent, public theme : ThemeService) { }
 

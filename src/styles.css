@@ -40,6 +40,8 @@ a, a:hover {
   white-space: pre-line !important;
 }
 
+button:focus{outline:none;}
+
 /***
  * Scrollbar 
  ***/

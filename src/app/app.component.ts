@@ -24,6 +24,8 @@ export class AppComponent implements OnInit {
         return;
       }
     })
+    document.documentElement.classList.remove(this.theme.getTheme())
+    document.documentElement.classList.add(theme);
     this.componentCssClass = theme;
     this.theme.set(theme);
   }

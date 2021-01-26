@@ -21,6 +21,8 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatInputModule} from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatListModule} from '@angular/material/list';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -67,6 +69,8 @@ import { ProjectCardComponent } from './elements/project-card/project-card.compo
     MatSnackBarModule,
     MatListModule,
     OverlayModule,
+    MatMenuModule,
+    MatIconModule,
   ],
   providers: [
     ThemeService
