@@ -5,7 +5,7 @@ This website is the personal site of me, Jaxon Wright. It is written with the Go
 
 ## Libraries Used
 This is not an exhaustive list, but it is the core of what is used.
-- [Angular 8](https://github.com/angular/angular) : The backbone
+- [Angular](https://github.com/angular/angular) : The backbone
 - [Angular Material](https://github.com/angular/material2) : Provides a plethora of elements that follow Google's Material Design standard
 - [Angular FontAwesome](https://fontawesome.com/) : A very powerful, fast and light way to handle icons.
 - [Bootstrap 4](https://getbootstrap.com/) : Used for layout purposes exclusively. Maybe will scrap this for the new CSS-Grid at a later time.
