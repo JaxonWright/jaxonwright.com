@@ -1,0 +1,18 @@
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="100" height="100" viewBox="0 0 454.000000 384.000000"
+ preserveAspectRatio="xMidYMid meet">
+   <style>
+    g {
+      fill: black;
+    }
+    @media (prefers-color-scheme: dark) {
+      g {
+        fill: white;
+      }
+    }
+  </style>
+<g transform="translate(0.000000,384.000000) scale(0.100000,-0.100000)" stroke="none">
+<path d="M2480 2585 l0 -975 -980 0 -980 0 392 -590 393 -589 786 -1 786 0
+353 528 c195 290 376 557 402 595 l48 67 0 970 0 970 -600 0 -600 0 0 -975z"/>
+</g>
+</svg>
