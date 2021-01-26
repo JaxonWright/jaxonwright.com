@@ -1,3 +1,4 @@
-button {
+button,
+a.mat-fab {
     margin-right: 8px;
 }

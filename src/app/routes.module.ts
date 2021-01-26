@@ -16,6 +16,7 @@ const appRoutes: Routes = [
     { path: 'build-info', component: BuildInfoComponent },
     { path: 'plex', component: PlexComponent },
     { path: 'contact', component: ContactComponent },
+    { path: 'pay', redirectTo: 'contact'},
     { path: '**', component: PageNotFoundComponent }
   ]
 
