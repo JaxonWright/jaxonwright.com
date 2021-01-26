@@ -34,13 +34,14 @@ jobs:
     needs: build
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v1
       - name: Download build
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v1
         with:
           name: deploy_dist
       - name: Deploy to GitHub Pages
-        uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.1
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          github_access_token: ${{ secrets.GITHUB_TOKEN }}
-          angular_dist_build_folder: deploy_dist
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: deploy_dist
