@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { VERSION } from '../../../environments/version';
 declare var require: any;
@@ -12,6 +12,7 @@ export interface Dependency {
 
 @Component({
   selector: 'app-build-info',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './build-info.component.html',
   styleUrls: ['./build-info.component.css']
 })
