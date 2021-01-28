@@ -6,6 +6,7 @@
     "ng": "ng",
     "start": "node version.js && ng serve",
     "build": "node version.js && ng build --prod --build-optimizer --output-hashing=all",
+    "build:ci": "npm run build && cp ./dist/index.html ./dist/404.html", 
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
