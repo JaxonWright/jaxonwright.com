@@ -2,7 +2,7 @@
   <mat-toolbar-row>
     <span class="fill-remaining-space"></span>
     <a mat-button routerLink="">
-      <img [src]="theme.isDark() ? 'assets/img/branding/white.png' : 'assets/img/branding/dark.png'" class='logo mx-auto'>
+      <img [src]="theme.isDark() || theme.isBlack() ? 'assets/img/branding/white.png' : 'assets/img/branding/dark.png'" class='logo mx-auto'>
     </a>
     <span class="fill-remaining-space"></span>
     <button mat-icon-button class="theme-button" matTooltip="Switch Theme"
