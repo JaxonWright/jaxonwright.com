@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { VERSION } from '../../../environments/version';
@@ -20,8 +21,12 @@ export class BuildInfoComponent implements OnInit {
   dependencies : Dependency[];
   buildInfo : Dependency[];
 
+  buildDate : string;
+
   constructor(private title : Title) { 
     this.title.setTitle('Jaxon Wright - Build Info');
+
+    this.buildDate = new Date(VERSION.date).toLocaleString('en-US',{ year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' });
   }
 
   ngOnInit() {
@@ -33,7 +38,7 @@ export class BuildInfoComponent implements OnInit {
                          {name: 'Bootstrap', version: '4.1.3', link: 'https://www.bootstrap.com', icon: ['fas', 'bold']}];
     
     this.buildInfo = [{name: 'Hash', version: VERSION.hash, link: `https://github.com/JaxonWright/jaxonwright.com/commit/${VERSION.hash}`, icon: ['fas', 'hashtag']},
-                      {name: 'Date', version: VERSION.date, link: '', icon: ['fas', 'calendar']}]
+                      {name: 'Date', version: this.buildDate, link: '', icon: ['fas', 'calendar']}]
 
   }
 
