@@ -11,11 +11,11 @@ export enum ThemeType {
   providedIn: 'root'
 })
 export class ThemeService {
-  themeType : ThemeType;
+  themeType: ThemeType;
 
-  constructor(public meta : Meta) { }
+  constructor(public meta: Meta) { }
 
-  set(theme) {
+  set(theme: ThemeType) {
     if (theme == ThemeType.Light) {
       this.themeType = theme;
       this.meta.updateTag({name: 'theme-color', content: "#f5f5f5"});
@@ -29,8 +29,8 @@ export class ThemeService {
     localStorage.setItem('theme', theme);
   }
 
-  getSaved() : string {
-    var theme = localStorage.getItem('theme');
+  getSaved(): string {
+    let theme = localStorage.getItem('theme');
     if (theme == ThemeType.Light ||
         theme == ThemeType.Dark ||
         theme == ThemeType.Black)
@@ -39,15 +39,20 @@ export class ThemeService {
     return ThemeType.Light;
   }
 
-  isLight() : boolean {
+  isLight(): boolean {
     return this.themeType == ThemeType.Light;
   }
 
-  isDark() : boolean {
-    return this.themeType == ThemeType.Dark || this.themeType == ThemeType.Black;
+  isDark(): boolean {
+    return this.themeType == ThemeType.Dark;
   }
 
-  getTheme() : ThemeType {
+  isBlack(): boolean {
+    return this.themeType == ThemeType.Black;
+  }
+
+  getTheme(): ThemeType {
     return this.themeType;
   }
+
 }
