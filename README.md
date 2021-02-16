@@ -1,7 +1,7 @@
 <img src="https://www.jaxonwright.com/assets/img/branding/dark.png" width="100px"/>
 
 [![Website status](https://img.shields.io/website-up-down-green-red/http/jaxonwright.com.svg?style=flat-square)](https://jaxonwright.com)
-[![GitHub license](https://img.shields.io/github/license/JaxonWright/jaxonwright.com?style=flat-square)](https://github.com/JaxonWright/jaxonwright.com)
+[![GitHub license](https://img.shields.io/github/license/JaxonWright/jaxonwright.com?style=flat-square)](https://github.com/JaxonWright/jaxonwright.com/blob/master/LICENSE)
 
 ## About
 This website is the personal site of me, Jaxon Wright. It is written with the Google-maintained Angular Framework. It is meant to showcase a little about me and what I have been working on. Feel free to reference any of this for your own project or even fork the repository.
