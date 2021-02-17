@@ -3,9 +3,8 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 export const Crypto = { 
-  BTC_WALLET: "3HRe3gyG6qr1JRcesnsfEGYhhD1N377WdD",
-  BCH_WALLET: "qpjyylenmrwuz7nzgz75nua98lzhn0aynuk0q5gw7s",
-  ETH_WALLET: "0xC1706CA11e6C9ed781d65371A7d71B0c02227860",
+  BTC_WALLET: "3P3V3taqLZeubAQNbsf9p99qxgNTSMQoGm",
+  ETH_WALLET: "0xea40f7f9e7f35c870c3149e142e0dac032be9843",
 }
 
 @Component({

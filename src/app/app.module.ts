@@ -33,6 +33,7 @@ import { BuildInfoComponent } from '@pages/build-info/build-info.component';
 import { IconsModule } from './icons.module';
 import { RoutesModule } from './routes.module';
 import { ProjectCardComponent } from './elements/project-card/project-card.component';
+import { QRCodeModule } from 'angularx-qrcode';
 
 
 
@@ -71,6 +72,7 @@ import { ProjectCardComponent } from './elements/project-card/project-card.compo
     OverlayModule,
     MatMenuModule,
     MatIconModule,
+    QRCodeModule,
   ],
   providers: [
     ThemeService
