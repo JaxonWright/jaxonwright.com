@@ -1,10 +1,11 @@
+@use '~@angular/material' as mat;
 @import '~@angular/material/theming';
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
-@include mat-core();
+@include mat.core();
 
 $mat-black: (
     50: #000000,
@@ -16,31 +17,31 @@ $mat-black: (
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://www.google.com/design/spec/style/color.html
-$light-app-primary: mat-palette($mat-grey, 900);
-$light-app-accent:  mat-palette($mat-green, A400);
+$light-app-primary: mat.define-palette(mat.$grey-palette, 900);
+$light-app-accent:  mat.define-palette(mat.$green-palette, A400);
 
 // The warn palette is optional (defaults to red).
-$app-warn:    mat-palette($mat-red);
+$app-warn:    mat.define-palette(mat.$red-palette);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$light-app-theme: mat-light-theme($light-app-primary, $light-app-accent, $app-warn);
+$light-app-theme: mat.define-light-theme($light-app-primary, $light-app-accent, $app-warn);
 
 
-$dark-app-primary: mat-palette($mat-grey, 50);
-$dark-app-accent:  mat-palette($mat-green, A400);
-$dark-app-theme: mat-dark-theme($dark-app-primary, $dark-app-accent, $app-warn);
+$dark-app-primary: mat.define-palette(mat.$grey-palette, 50);
+$dark-app-accent:  mat.define-palette(mat.$green-palette, A400);
+$dark-app-theme: mat.define-dark-theme($dark-app-primary, $dark-app-accent, $app-warn);
 
-$black-app-primary: mat-palette($mat-black, 50);
-$black-app-accent:  mat-palette($mat-green, A400);
-$black-app-theme: mat-dark-theme($black-app-primary, $black-app-accent, $app-warn);
+$black-app-primary: mat.define-palette($mat-black, 50);
+$black-app-accent:  mat.define-palette(mat.$green-palette, A400);
+$black-app-theme: mat.define-dark-theme($black-app-primary, $black-app-accent, $app-warn);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($light-app-theme);
+@include mat.all-component-themes($light-app-theme);
 
 .black-theme {
-  @include angular-material-theme($black-app-theme);
+  @include mat.all-component-themes($black-app-theme);
   .mat-app-background,
   .mat-toolbar { background-color: #000000; color: rgb(236, 236, 236) }
   .mat-card { background-color: #1a1a1a; color: rgb(236, 236, 236) }
@@ -49,9 +50,9 @@ $black-app-theme: mat-dark-theme($black-app-primary, $black-app-accent, $app-war
 }
 
 .dark-theme {
-  @include angular-material-theme($dark-app-theme);
+  @include mat.all-component-themes($dark-app-theme);
 }
 
 .light-theme {
-  @include angular-material-theme($light-app-theme);
+  @include mat.all-component-themes($light-app-theme);
 }
