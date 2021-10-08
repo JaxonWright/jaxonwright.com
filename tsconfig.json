@@ -23,5 +23,9 @@
       "@dialogs/*": ["app/elements/dialogs/*"],
       "@services/*": ["app/services/*"]
     },
+  },
+  "angularCompilerOptions": {
+    "strictTemplates": true,
+    "strictInjectionParameters": true
   }
 }
