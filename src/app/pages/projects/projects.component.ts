@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { ThemeService } from '../../services/theme/theme.service';
 
 export interface Project {
@@ -13,7 +14,7 @@ export interface Project {
 }
 
 export interface Category {
-  icon : String[], //['fab','android']
+  icon : IconProp, //['fab','android']
   title : string
 }
 

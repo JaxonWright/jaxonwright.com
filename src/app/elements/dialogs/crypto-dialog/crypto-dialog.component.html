@@ -1,7 +1,7 @@
 <h1 mat-dialog-title *ngIf="walletID == Crypto.BTC_WALLET">Pay With Bitcoin</h1>
 <h1 mat-dialog-title *ngIf="walletID == Crypto.ETH_WALLET">Pay With Etherium</h1>
 <mat-dialog-content>
-  <qrcode class="text-center" [qrdata]="walletID" [width]="'55%'" [margin]="2" [scale]="1" elementType="svg">
+  <qrcode class="text-center" [qrdata]="walletID" [width]="250" [margin]="2" [scale]="1" elementType="svg">
   </qrcode>
   <mat-form-field appearance="outline" class="w-100" style="margin-top: 16px">
     <mat-label>Wallet Address</mat-label>

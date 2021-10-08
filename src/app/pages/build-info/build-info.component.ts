@@ -1,6 +1,7 @@
 import { DatePipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { VERSION } from '../../../environments/version';
 declare var require: any;
 
@@ -8,7 +9,7 @@ export interface Dependency {
   name : string,
   link : string,
   version : string,
-  icon : string[]
+  icon : IconProp
 }
 
 @Component({
