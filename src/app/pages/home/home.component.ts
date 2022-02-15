@@ -33,9 +33,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   getAge() : number {
-    let birthday = DateTime.fromISO('1995-2-25');
+    let birthday = DateTime.fromISO('1995-02-25');
     let now = DateTime.now();
-	  return now.diff(birthday, 'years').years;
+    console.log(birthday, now, now.diff(birthday, 'years'))
+	  return Math.floor(now.diff(birthday, 'years').years);
   }
 
 
