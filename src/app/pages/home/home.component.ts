@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit, ChangeDetectionStrategy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import * as moment from 'moment';
+import { DateTime } from 'luxon';
 
 @Component({
   selector: 'app-home',
@@ -33,7 +33,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   getAge() : number {
-	return moment().diff('1995-2-25', 'years');
+    let birthday = DateTime.fromISO('1995-2-25');
+    let now = DateTime.now();
+	  return now.diff(birthday, 'years').years;
   }
 
 
