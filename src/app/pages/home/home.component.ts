@@ -9,12 +9,14 @@ import { DateTime } from 'luxon';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit, AfterViewInit {
+  yearsAtVolgistics : number;
 
   constructor(private titleServ : Title) { 
     this.titleServ.setTitle('Jaxon Wright - About');
   }
 
   ngOnInit() {
+    this.yearsAtVolgistics = this.getYearsAtVolgistics();
   }
 
   ngAfterViewInit() {
@@ -35,8 +37,15 @@ export class HomeComponent implements OnInit, AfterViewInit {
   getAge() : number {
     let birthday = DateTime.fromISO('1995-02-25');
     let now = DateTime.now();
-    console.log(birthday, now, now.diff(birthday, 'years'))
+
 	  return Math.floor(now.diff(birthday, 'years').years);
+  }
+
+  getYearsAtVolgistics() : number {
+    let anniv = DateTime.fromISO('2017-07-13');
+    let now = DateTime.now();
+
+    return Math.floor(now.diff(anniv,'years').years);
   }
 
 
