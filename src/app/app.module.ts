@@ -39,44 +39,43 @@ import { QRCodeModule } from 'angularx-qrcode';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    ProjectsComponent,
-    PageNotFoundComponent,
-    NavbarComponent,
-    FooterComponent,
-    ContactComponent,
-    PlexComponent,
-    CryptoDialogComponent,
-    BuildInfoComponent,
-    ProjectCardComponent,
-  ],
-  entryComponents: [CryptoDialogComponent],
-  imports: [
-    FontAwesomeModule,
-    IconsModule,
-    RoutesModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatCardModule,
-    MatTooltipModule,
-    MatDividerModule,
-    MatChipsModule,
-    MatDialogModule,
-    MatInputModule,
-    MatSnackBarModule,
-    MatListModule,
-    OverlayModule,
-    MatMenuModule,
-    MatIconModule,
-    QRCodeModule,
-  ],
-  providers: [
-    ThemeService
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        ProjectsComponent,
+        PageNotFoundComponent,
+        NavbarComponent,
+        FooterComponent,
+        ContactComponent,
+        PlexComponent,
+        CryptoDialogComponent,
+        BuildInfoComponent,
+        ProjectCardComponent,
+    ],
+    imports: [
+        FontAwesomeModule,
+        IconsModule,
+        RoutesModule,
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatCardModule,
+        MatTooltipModule,
+        MatDividerModule,
+        MatChipsModule,
+        MatDialogModule,
+        MatInputModule,
+        MatSnackBarModule,
+        MatListModule,
+        OverlayModule,
+        MatMenuModule,
+        MatIconModule,
+        QRCodeModule,
+    ],
+    providers: [
+        ThemeService
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
