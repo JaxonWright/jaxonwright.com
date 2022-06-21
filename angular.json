@@ -110,7 +110,6 @@
       }
     }
   },
-  "defaultProject": "jaxonwright",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
