@@ -5,16 +5,8 @@
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
-// TODO(v15): As of v15 mat.legacy-core no longer includes default typography styles.
-//  The following line adds:
-//    1. Default typography styles for all components
-//    2. Styles for typography hierarchy classes (e.g. .mat-headline-1)
-//  If you specify typography styles for the components you use elsewhere, you should delete this line.
-//  If you don't need the default component typographies but still want the hierarchy styles,
-//  you can delete this line and instead use:
-//    `@include mat.legacy-typography-hierarchy(mat.define-legacy-typography-config());`
-@include mat.all-legacy-component-typographies();
-@include mat.legacy-core();
+// @include mat.all-component-typographies();
+@include mat.core();
 
 $mat-black: (
     50: #000000,
@@ -39,35 +31,53 @@ $light-app-accent:  mat.define-palette(mat.$green-palette, A400);
 $app-warn:    mat.define-palette(mat.$red-palette);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$light-app-theme: mat.define-light-theme($light-app-primary, $light-app-accent, $app-warn);
-
+$light-app-theme: mat.define-light-theme((
+  color: (
+    primary: $light-app-primary,
+    accent: $light-app-accent, 
+    warn: $app-warn
+  ),
+  typography: mat.define-typography-config(),
+  density: 0
+));
 
 $dark-app-primary: mat.define-palette(mat.$grey-palette, 50);
 $dark-app-accent:  mat.define-palette(mat.$green-palette, A400);
-$dark-app-theme: mat.define-dark-theme($dark-app-primary, $dark-app-accent, $app-warn);
+$dark-app-theme: mat.define-dark-theme((
+  color: (
+    primary: $dark-app-primary,
+    accent: $dark-app-accent, 
+    warn: $app-warn
+  ),
+  typography: mat.define-typography-config(),
+  density: 0
+));
 
 $black-app-primary: mat.define-palette($mat-black, 50);
 $black-app-accent:  mat.define-palette(mat.$green-palette, A400);
-$black-app-theme: mat.define-dark-theme($black-app-primary, $black-app-accent, $app-warn);
-
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
-@include mat.all-legacy-component-themes($light-app-theme);
+$black-app-theme: mat.define-dark-theme((
+  color: (
+    primary: $black-app-primary,
+    accent: $black-app-accent, 
+    warn: $app-warn
+  ),
+  typography: mat.define-typography-config(),
+  density: 0
+));
 
 .black-theme {
-  @include mat.all-legacy-component-themes($black-app-theme);
+  @include mat.all-component-themes($black-app-theme);
   .mat-app-background,
   .mat-toolbar { background-color: #000000; color: rgb(236, 236, 236) }
-  .mat-card { background-color: #1a1a1a; color: rgb(236, 236, 236) }
+  .mat-mdc-card { background-color: #1a1a1a; color: rgb(236, 236, 236) }
   .mat-menu-panel { background-color: #1a1a1a; color: rgb(236, 236, 236) }
   .mat-dialog-container { background-color: #1a1a1a; color: rgb(236, 236, 236) }
 }
 
 .dark-theme {
-  @include mat.all-legacy-component-themes($dark-app-theme);
+  @include mat.all-component-themes($dark-app-theme);
 }
 
 .light-theme {
-  @include mat.all-legacy-component-themes($light-app-theme);
+  @include mat.all-component-themes($light-app-theme);
 }

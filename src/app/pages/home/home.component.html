@@ -1,7 +1,7 @@
 <h1>{{getTimeGreeting()}}. My name is Jaxon.</h1>
 <div class="row">
   <div class="col-md-12">
-    <mat-card>
+    <mat-card appearance="outlined">
       <mat-card-header class="about-me-card-header">
         <div mat-card-avatar class="headshot"></div>
         <mat-card-content class="about-me-desc"> 
@@ -20,7 +20,7 @@
 <h2>Things</h2>
 <div class="row">
   <div class="col-md-4 mb-2">
-    <mat-card>
+    <mat-card appearance="outlined">
       <mat-card-header>
         <mat-card-title>
           <fa-icon [icon]="['fas','car']"></fa-icon> Car
@@ -41,7 +41,7 @@
     </mat-card>
   </div>
   <div class="col-md-4 mb-2">
-    <mat-card>
+    <mat-card appearance="outlined">
       <mat-card-header>
         <mat-card-title>
           <fa-icon [icon]="['fas','mobile-alt']"></fa-icon> Phone
@@ -56,7 +56,7 @@
     </mat-card>
   </div>
   <div class="col-md-4">
-    <mat-card>
+    <mat-card appearance="outlined">
       <mat-card-header>
         <mat-card-title>
           <fa-icon [icon]="['fas','desktop']"></fa-icon> Computer
@@ -79,7 +79,7 @@
 <h2>Experience</h2>
 <div class="row">
   <div class="col-md-12">
-    <mat-card>
+    <mat-card appearance="outlined">
       <mat-card-header>
         <div mat-card-avatar class="volgistics-header-image"></div>
         <mat-card-title>Software Developer</mat-card-title>
@@ -99,7 +99,7 @@
 </div>
 <div class="row">
   <div class="col-md-12">
-    <mat-card>
+    <mat-card appearance="outlined">
       <mat-card-header>
         <div mat-card-avatar class="configura-header-image"></div>
         <mat-card-title>Application Consultant Intern</mat-card-title>
@@ -119,7 +119,7 @@
 <h2>Education</h2>
 <div class="row">
   <div class="col-md-12">
-    <mat-card>
+    <mat-card appearance="outlined">
       <mat-card-header>
         <div mat-card-avatar class="gvsu-header-image"></div>
         <mat-card-title>Bachelor of Science in Computer Science</mat-card-title>
@@ -131,18 +131,18 @@
         development.
       </mat-card-content>
       <mat-card-actions>
-        <mat-chip-list>
-          <mat-chip>
+        <mat-chip-listbox>
+          <mat-chip-option>
             <fa-icon [icon]="['fas', 'balance-scale']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']">
             </fa-icon>
             &nbsp;3.5 GPA
-          </mat-chip>
-          <mat-chip>
+          </mat-chip-option>
+          <mat-chip-option>
             <fa-icon [icon]="['fas', 'newspaper']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']">
             </fa-icon>
             &nbsp;1 Publication
-          </mat-chip>
-        </mat-chip-list>
+          </mat-chip-option>
+        </mat-chip-listbox>
       </mat-card-actions>
     </mat-card>
   </div>
@@ -150,147 +150,149 @@
 <h2>Knowledge</h2>
 <div class="row">
   <div class="col-md-12">
-    <mat-card>
-      <p>Here are some technologies that I have used before and know how to use. I am better with some more than others.
-      </p>
-      <h4>Languages</h4>
-      <mat-chip-list>
-        <mat-chip>
-          <fa-icon [icon]="['fab', 'java']" size="lg" transform="shrink-7.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;Java
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fas', 'code']" size="lg" transform="shrink-7.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;Delphi
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fas', 'code']" size="lg" transform="shrink-7.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;C++
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fas', 'code']" size="lg" transform="shrink-7.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;C
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fab', 'python']" size="lg" transform="shrink-7.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;Python
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fas', 'code']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;Swift
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fab', 'html5']" size="lg" transform="shrink-7.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;HTML
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fab', 'css3-alt']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;CSS
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fas', 'code']" size="lg" transform="shrink-7.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;TypeScript
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fab', 'js-square']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;JavaScript
-        </mat-chip>
-      </mat-chip-list>
-      <h4>Web Frameworks</h4>
-      <mat-chip-list>
-        <mat-chip>
-          <fa-icon [icon]="['fab', 'angular']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;Angular
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fab', 'ember']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;Ember
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fas', 'code']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;Polymer
-        </mat-chip>
-      </mat-chip-list>
-      <h4>Databases</h4>
-      <mat-chip-list>
-        <mat-chip>
-          <fa-icon [icon]="['fas', 'database']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;Firebase
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fas', 'database']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;BTrieve
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fas', 'database']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;MySQL
-        </mat-chip>
-      </mat-chip-list>
-      <h4>Version Control</h4>
-      <mat-chip-list>
-        <mat-chip>
-          <fa-icon [icon]="['fas', 'code-branch']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']">
-          </fa-icon>
-          &nbsp;Git
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fas', 'code-branch']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']">
-          </fa-icon>
-          &nbsp;Subversion
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fas', 'code-branch']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']">
-          </fa-icon>
-          &nbsp;Perforce
-        </mat-chip>
-      </mat-chip-list>
-      <h4>Platforms</h4>
-      <mat-chip-list>
-        <mat-chip>
-          <fa-icon [icon]="['fas', 'mouse-pointer']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']">
-          </fa-icon>
-          &nbsp;Web
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fab', 'android']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;Android
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fab', 'windows']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;Windows
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fab', 'apple']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;iOS
-        </mat-chip>
-      </mat-chip-list>
-      <h4>IDEs</h4>
-      <mat-chip-list>
-        <mat-chip>
-          <fa-icon [icon]="['fas', 'mouse-pointer']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']">
-          </fa-icon>
-          &nbsp;Visual Studio Code
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fab', 'android']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;Android Studio
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fab', 'windows']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;Intellij IDEA
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fab', 'windows']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;Emacs
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fab', 'windows']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;Delphi XE5
-        </mat-chip>
-        <mat-chip>
-          <fa-icon [icon]="['fab', 'apple']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
-          &nbsp;XCode
-        </mat-chip>
-      </mat-chip-list>
+    <mat-card appearance="outlined">
+      <mat-card-content>
+        <p>Here are some technologies that I have used before and know how to use. I am better with some more than others.
+        </p>
+        <h4>Languages</h4>
+        <mat-chip-listbox>
+          <mat-chip-option>
+            <fa-icon [icon]="['fab', 'java']" size="lg" transform="shrink-7.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;Java
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fas', 'code']" size="lg" transform="shrink-7.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;Delphi
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fas', 'code']" size="lg" transform="shrink-7.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;C++
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fas', 'code']" size="lg" transform="shrink-7.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;C
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fab', 'python']" size="lg" transform="shrink-7.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;Python
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fas', 'code']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;Swift
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fab', 'html5']" size="lg" transform="shrink-7.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;HTML
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fab', 'css3-alt']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;CSS
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fas', 'code']" size="lg" transform="shrink-7.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;TypeScript
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fab', 'js-square']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;JavaScript
+          </mat-chip-option>
+        </mat-chip-listbox>
+        <h4>Web Frameworks</h4>
+        <mat-chip-listbox>
+          <mat-chip-option>
+            <fa-icon [icon]="['fab', 'angular']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;Angular
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fab', 'ember']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;Ember
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fas', 'code']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;Polymer
+          </mat-chip-option>
+        </mat-chip-listbox>
+        <h4>Databases</h4>
+        <mat-chip-listbox>
+          <mat-chip-option>
+            <fa-icon [icon]="['fas', 'database']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;Firebase
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fas', 'database']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;BTrieve
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fas', 'database']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;MySQL
+          </mat-chip-option>
+        </mat-chip-listbox>
+        <h4>Version Control</h4>
+        <mat-chip-listbox>
+          <mat-chip-option>
+            <fa-icon [icon]="['fas', 'code-branch']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']">
+            </fa-icon>
+            &nbsp;Git
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fas', 'code-branch']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']">
+            </fa-icon>
+            &nbsp;Subversion
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fas', 'code-branch']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']">
+            </fa-icon>
+            &nbsp;Perforce
+          </mat-chip-option>
+        </mat-chip-listbox>
+        <h4>Platforms</h4>
+        <mat-chip-listbox>
+          <mat-chip-option>
+            <fa-icon [icon]="['fas', 'mouse-pointer']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']">
+            </fa-icon>
+            &nbsp;Web
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fab', 'android']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;Android
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fab', 'windows']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;Windows
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fab', 'apple']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;iOS
+          </mat-chip-option>
+        </mat-chip-listbox>
+        <h4>IDEs</h4>
+        <mat-chip-listbox>
+          <mat-chip-option>
+            <fa-icon [icon]="['fas', 'mouse-pointer']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']">
+            </fa-icon>
+            &nbsp;Visual Studio Code
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fab', 'android']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;Android Studio
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fab', 'windows']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;Intellij IDEA
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fab', 'windows']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;Emacs
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fab', 'windows']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;Delphi XE5
+          </mat-chip-option>
+          <mat-chip-option>
+            <fa-icon [icon]="['fab', 'apple']" size="lg" transform="shrink-6.5" [mask]="['fas', 'circle']"></fa-icon>
+            &nbsp;XCode
+          </mat-chip-option>
+        </mat-chip-listbox>
+      </mat-card-content>
     </mat-card>
   </div>

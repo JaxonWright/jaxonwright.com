@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-12">
-    <mat-card>
+    <mat-card appearance="outlined">
       <mat-card-header>
         <mat-card-title>
           <img *ngIf="project.logo" class="title-img" [src]="getLogoSource()">
@@ -9,12 +9,12 @@
           </ng-container>
         </mat-card-title>
         <mat-card-subtitle>
-          <mat-chip-list>
-            <mat-chip *ngFor="let cat of project.categories">
+          <mat-chip-listbox>
+            <mat-chip-option *ngFor="let cat of project.categories">
               <fa-icon [icon]="cat.icon" size="lg" transform="shrink-6.5" [mask]="['fas','circle']"></fa-icon>
               &nbsp;{{cat.title}}
-            </mat-chip>
-          </mat-chip-list>
+            </mat-chip-option>
+          </mat-chip-listbox>
         </mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
