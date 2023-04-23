@@ -10,10 +10,10 @@
         </mat-card-title>
         <mat-card-subtitle>
           <mat-chip-listbox>
-            <mat-chip-option *ngFor="let cat of project.categories">
+            <mat-chip *ngFor="let cat of project.categories">
               <fa-icon [icon]="cat.icon" size="lg" transform="shrink-6.5" [mask]="['fas','circle']"></fa-icon>
               &nbsp;{{cat.title}}
-            </mat-chip-option>
+            </mat-chip>
           </mat-chip-listbox>
         </mat-card-subtitle>
       </mat-card-header>
