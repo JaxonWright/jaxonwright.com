@@ -65,8 +65,41 @@ $black-app-theme: mat.define-dark-theme((
   density: 0
 ));
 
+@include mat.core-theme($light-app-theme);
+@include mat.toolbar-theme($light-app-theme);
+@include mat.button-theme($light-app-theme);
+@include mat.icon-button-theme($light-app-theme);
+@include mat.fab-theme($light-app-theme);
+@include mat.card-theme($light-app-theme);
+@include mat.tooltip-theme($light-app-theme);
+@include mat.divider-theme($light-app-theme);
+@include mat.chips-theme($light-app-theme);
+@include mat.dialog-theme($light-app-theme);
+@include mat.form-field-theme($light-app-theme);
+@include mat.input-theme($light-app-theme);
+@include mat.snack-bar-theme($light-app-theme);
+@include mat.list-theme($light-app-theme);
+@include mat.menu-theme($light-app-theme);
+@include mat.icon-theme($light-app-theme);
+
 .black-theme {
-  @include mat.all-component-themes($black-app-theme);
+  @include mat.core-color($black-app-theme);
+  @include mat.toolbar-color($black-app-theme);
+  @include mat.button-color($black-app-theme);
+  @include mat.icon-button-color($black-app-theme);
+  @include mat.fab-color($black-app-theme);
+  @include mat.card-color($black-app-theme);
+  @include mat.tooltip-color($black-app-theme);
+  @include mat.divider-color($black-app-theme);
+  @include mat.chips-color($black-app-theme);
+  @include mat.dialog-color($black-app-theme);
+  @include mat.form-field-color($black-app-theme);
+  @include mat.input-color($black-app-theme);
+  @include mat.snack-bar-color($black-app-theme);
+  @include mat.list-color($black-app-theme);
+  @include mat.menu-color($black-app-theme);
+  @include mat.icon-color($black-app-theme);
+
   .mat-app-background,
   .mat-toolbar { background-color: #000000; color: rgb(236, 236, 236) }
   .mat-mdc-card { background-color: #1a1a1a; color: rgb(236, 236, 236) }
@@ -75,9 +108,40 @@ $black-app-theme: mat.define-dark-theme((
 }
 
 .dark-theme {
-  @include mat.all-component-themes($dark-app-theme);
+  @include mat.core-color($dark-app-theme);
+  @include mat.toolbar-color($dark-app-theme);
+  @include mat.button-color($dark-app-theme);
+  @include mat.icon-button-color($dark-app-theme);
+  @include mat.fab-color($dark-app-theme);
+  @include mat.card-color($dark-app-theme);
+  @include mat.tooltip-color($dark-app-theme);
+  @include mat.divider-color($dark-app-theme);
+  @include mat.chips-color($dark-app-theme);
+  @include mat.dialog-color($dark-app-theme);
+  @include mat.form-field-color($dark-app-theme);
+  @include mat.input-color($dark-app-theme);
+  @include mat.snack-bar-color($dark-app-theme);
+  @include mat.list-color($dark-app-theme);
+  @include mat.menu-color($dark-app-theme);
+  @include mat.icon-color($dark-app-theme);
+  @include mat.sidenav-color($dark-app-theme);
 }
 
 .light-theme {
-  @include mat.all-component-themes($light-app-theme);
+  @include mat.core-color($light-app-theme);
+  @include mat.toolbar-color($light-app-theme);
+  @include mat.button-color($light-app-theme);
+  @include mat.icon-button-color($light-app-theme);
+  @include mat.fab-color($light-app-theme);
+  @include mat.card-color($light-app-theme);
+  @include mat.tooltip-color($light-app-theme);
+  @include mat.divider-color($light-app-theme);
+  @include mat.chips-color($light-app-theme);
+  @include mat.dialog-color($light-app-theme);
+  @include mat.form-field-color($light-app-theme);
+  @include mat.input-color($light-app-theme);
+  @include mat.snack-bar-color($light-app-theme);
+  @include mat.list-color($light-app-theme);
+  @include mat.menu-color($light-app-theme);
+  @include mat.icon-color($light-app-theme);
 }
