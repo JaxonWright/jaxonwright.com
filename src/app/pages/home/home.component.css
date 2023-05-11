@@ -10,22 +10,21 @@ h4 {
     height: 70px;
     width: 70px;
 }
+
 .gvsu-header-image {
     background-image: url('../../../assets/img/resume/GVSU.jpg');
     background-size: cover;
 }
+
 .volgistics-header-image {
     background-image: url('../../../assets/img/resume/volgistics.png');
     background-size: cover;
 }
+
 .configura-header-image {
     background-image: url('../../../assets/img/resume/configura.png');
     background-size: contain;
     background-repeat: no-repeat;
-}
-.dunrite-header-image {
-    background-image: url('../../../assets/img/dunrite/d.png');
-    background-size: cover;
 }
 
 .headshot {
@@ -37,17 +36,6 @@ h4 {
     margin-left: auto;
 }
 
-.now-playing-card {
-    background: #1a1a1a;
-    color: #1a1a1a;
-    overflow: hidden;
-}
-
-.now-playing-card > mat-card-content > last-fm-scrobbles {
-    margin-top: -12px;
-    margin-right: -61px;
-}
-
 .about-me-card-header {
    display: flex;
    flex-direction: row; 
@@ -56,4 +44,8 @@ h4 {
 .about-me-desc {
   display: flex;
   align-self: center;  
+}
+
+.mat-mdc-card-subtitle  {
+    padding-top: 4px !important;
 }
