@@ -56,7 +56,8 @@ import {
     faLastfm,
     faRust,
     faLinux,
-    faStackOverflow
+    faStackOverflow,
+    faGitlab
 } from '@fortawesome/free-brands-svg-icons';
 
 /**
@@ -124,7 +125,8 @@ export class IconsModule {
       faLastfm,
       faRust,
       faLinux,
-      faStackOverflow
+      faStackOverflow,
+      faGitlab
     );
   }
 
