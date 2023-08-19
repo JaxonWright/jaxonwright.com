@@ -55,7 +55,8 @@ import {
     faSpotify,
     faLastfm,
     faRust,
-    faLinux
+    faLinux,
+    faStackOverflow
 } from '@fortawesome/free-brands-svg-icons';
 
 /**
@@ -122,7 +123,8 @@ export class IconsModule {
       faSpotify,
       faLastfm,
       faRust,
-      faLinux
+      faLinux,
+      faStackOverflow
     );
   }
 
