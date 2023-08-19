@@ -24,6 +24,7 @@ import {
     faBold,
     faCalendar,
     faEnvelope,
+    faFileContract
 } from '@fortawesome/free-solid-svg-icons';
 
 // Brand Icons (fab)
@@ -53,6 +54,8 @@ import {
     faFontAwesome,
     faSpotify,
     faLastfm,
+    faRust,
+    faLinux
 } from '@fortawesome/free-brands-svg-icons';
 
 /**
@@ -91,6 +94,7 @@ export class IconsModule {
       faBold,
       faCalendar,
       faEnvelope,
+      faFileContract,
       // fab
       faJava,
       faPython,
@@ -117,6 +121,8 @@ export class IconsModule {
       faFontAwesome,
       faSpotify,
       faLastfm,
+      faRust,
+      faLinux
     );
   }
 

@@ -51,6 +51,10 @@ export class ProjectsComponent implements OnInit {
         What makes this special is that it triggers "Theater Mode", which will make the application and anything clicked within it be open on the entire screen.`,
         categories : [
           {
+            icon : ['fas','file-contract'],
+            title : 'GPL-3.0'
+          },
+          {
             icon : ['fab','angular'],
             title : 'Angular'
           },
@@ -74,6 +78,61 @@ export class ProjectsComponent implements OnInit {
           },
           {
             link : 'https://github.com/arbitrarydot/testube',
+            title : 'GitHub'
+          }
+        ]
+      },
+      {
+        title : 'sentinel',
+        logo : '../../assets/img/projects/sentinel.png',
+        darkLogo : '../../assets/img/projects/sentinelLight.png',
+        logoOnly : true,
+        description : `A free, open-source Windows, macOS, and Linux application that allows you to efficiently view, manage, and export sentry and dashcam footage from your Tesla vehicle. It does require you to have access to the USB drive containing the footage, whether that be directly plugged into your computer or using a more complicated setup with a network share`,
+        categories : [
+          {
+            icon : ['fas','file-contract'],
+            title : 'GPL-3.0'
+          },
+          {
+            icon : ['fab','windows'],
+            title : 'Windows'
+          },
+          {
+            icon : ['fab','apple'],
+            title : 'macOS'
+          },
+          {
+            icon : ['fab','linux'],
+            title : 'Linux'
+          },
+          {
+            icon : ['fab','angular'],
+            title : 'Angular'
+          },
+          {
+            icon : ['fas','code'],
+            title : 'Tauri'
+          },
+          {
+            icon : ['fas','code'],
+            title : 'TypeScript'
+          },
+          {
+            icon : ['fab','rust'],
+            title : 'Rust'
+          },
+          {
+            icon : ['fab','html5'],
+            title : 'HTML'
+          },
+          {
+            icon : ['fab','css3-alt'],
+            title : 'CSS'
+          },
+        ],
+        actions : [
+          {
+            link : 'https://github.com/arbitrarydot/sentinel',
             title : 'GitHub'
           }
         ]
