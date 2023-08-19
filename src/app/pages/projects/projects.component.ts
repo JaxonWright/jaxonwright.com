@@ -201,6 +201,10 @@ export class ProjectsComponent implements OnInit {
         that I acheived both goals and look forward to what this project will become over time.`,
         categories : [
           {
+            icon : ['fas','file-contract'],
+            title : 'MIT'
+          },
+          {
             icon : ['fab','ember'],
             title : 'Ember'
           },
@@ -239,6 +243,10 @@ export class ProjectsComponent implements OnInit {
         logoOnly : false,
         description : `This is the website that you are currently on. This is my personal website.`,
         categories : [
+          {
+            icon : ['fas','file-contract'],
+            title : 'MIT'
+          },
           {
             icon : ['fab','angular'],
             title : 'Angular'
