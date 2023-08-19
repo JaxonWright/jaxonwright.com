@@ -36,7 +36,7 @@ export class ThemeService {
         theme == ThemeType.Black)
       return theme;
     else localStorage.removeItem('theme');
-    return ThemeType.Light;
+    return ThemeType.Black;
   }
 
   isLight(): boolean {
