@@ -60,18 +60,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "jaxonwright:build"
+            "buildTarget": "jaxonwright:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "jaxonwright:build:production"
+              "buildTarget": "jaxonwright:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "jaxonwright:build"
+            "buildTarget": "jaxonwright:build"
           }
         },
         "test": {
