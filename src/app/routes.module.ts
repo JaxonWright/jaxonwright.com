@@ -4,7 +4,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from '@pages/home/home.component';
 import { ProjectsComponent } from '@pages/projects/projects.component';
 import { BuildInfoComponent } from '@pages/build-info/build-info.component';
-import { PlexComponent } from '@pages/plex/plex.component';
 import { ContactComponent } from '@pages/contact/contact.component';
 import { PageNotFoundComponent } from '@pages/page-not-found/page-not-found.component';
 
@@ -14,7 +13,6 @@ const appRoutes: Routes = [
     { path: 'about', component: HomeComponent },
     { path: 'projects', component: ProjectsComponent },
     { path: 'build-info', component: BuildInfoComponent },
-    { path: 'plex', component: PlexComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'pay', redirectTo: 'contact'},
     { path: '**', component: PageNotFoundComponent }
