@@ -9,7 +9,6 @@ import { PageNotFoundComponent } from '@pages/page-not-found/page-not-found.comp
 import { NavbarComponent } from '@elements/navbar/navbar.component';
 import { FooterComponent } from '@elements/footer/footer.component';
 import { ContactComponent } from '@pages/contact/contact.component';
-import { PlexComponent } from '@pages/plex/plex.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
@@ -47,7 +46,6 @@ import { QRCodeModule } from 'angularx-qrcode';
         NavbarComponent,
         FooterComponent,
         ContactComponent,
-        PlexComponent,
         CryptoDialogComponent,
         BuildInfoComponent,
         ProjectCardComponent,
