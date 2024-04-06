@@ -43,12 +43,14 @@ h4 {
 
 .about-me-card-header {
    display: flex;
-   flex-direction: row; 
+   flex-direction: row;
+   flex-wrap: wrap;
 }
 
 .about-me-desc {
   display: flex;
-  align-self: center;  
+  align-self: center;
+  flex-basis: 625px;  
 }
 
 .mat-mdc-card-subtitle  {
