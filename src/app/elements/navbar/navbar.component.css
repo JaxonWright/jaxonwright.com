@@ -1,6 +1,7 @@
 img.logo {
     width: auto;
     height: 24px;
+    vertical-align: middle;
 }
 
 mat-toolbar-row {

@@ -4,6 +4,14 @@ img.title-img {
 }
 
 mat-card-content {
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+mat-card-title, mat-card-subtitle {
+    margin-left: 8px;
+}
+
+mat-card {
+    width: 100%;
 }

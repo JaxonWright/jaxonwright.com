@@ -1,8 +1,19 @@
-.container { 
-    padding-top: 16px;
-    padding-bottom: 98px;
+.app-frame {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-.app-frame {
-    min-height: calc(100vh);
+.content {
+    flex: 1;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-bottom: 64px;
+}
+
+@media(max-width:1200px) {
+    .content {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
 }

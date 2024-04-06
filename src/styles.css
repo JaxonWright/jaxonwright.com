@@ -14,10 +14,33 @@ body {
   min-height: 100vh;
   position: relative;
   margin: 0;
+  font-family: Roboto, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h1, h2, h3, h4 {
+  font-family: Figtree, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+}
+
+mat-card mat-card-title h3 {
+  margin: 0;
+}
+
+mat-card mat-card-content {
+  height: 100%;
+}
+
+
+p {
+  line-height: 24px;
+  margin: 0;
 }
 
 .row {
-  margin-top: 8px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 16px;
 }
 
 a, a:hover {

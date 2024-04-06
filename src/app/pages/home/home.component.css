@@ -6,6 +6,11 @@ h4 {
     margin-top: 8px;
 }
 
+.things-card {
+    flex: 1;
+    flex-basis: 270px;
+}
+
 .mat-mdc-card-avatar {
     height: 70px;
     width: 70px;

@@ -77,7 +77,7 @@ export class ProjectsComponent implements OnInit {
             title : 'Website'
           },
           {
-            link : 'https://github.com/arbitrarydot/testube',
+            link : 'https://github.com/arbitrari/testube',
             title : 'GitHub'
           }
         ]
@@ -132,7 +132,7 @@ export class ProjectsComponent implements OnInit {
         ],
         actions : [
           {
-            link : 'https://github.com/arbitrarydot/sentinel',
+            link : 'https://github.com/arbitrari/sentinel',
             title : 'GitHub'
           }
         ]
@@ -364,10 +364,6 @@ export class ProjectsComponent implements OnInit {
         ],
         actions : [
           {
-            link : 'https://play.google.com/store/apps/details?id=com.dunrite.tallyup',
-            title : 'Download'
-          },
-          {
             link : 'https://github.com/dunrite/tallyup',
             title : 'GitHub'
           }
@@ -391,10 +387,6 @@ export class ProjectsComponent implements OnInit {
         ],
         actions : [
           {
-            link : 'https://play.google.com/store/apps/details?id=com.dunrite.pixbar',
-            title : 'Download'
-          },
-          {
             link : 'https://github.com/dunrite/pixbar',
             title : 'GitHub'
           }
@@ -417,10 +409,6 @@ export class ProjectsComponent implements OnInit {
         ],
         actions : [
           {
-            link : 'https://play.google.com/store/apps/details?id=com.dunrite.xpaper',
-            title : 'Download'
-          },
-          {
             link : 'https://github.com/dunrite/xpaper',
             title : 'GitHub'
           }
@@ -442,10 +430,6 @@ export class ProjectsComponent implements OnInit {
           }
         ],
         actions : [
-          {
-            link : 'https://play.google.com/store/apps/details?id=com.dunrite.nowpaper',
-            title : 'Download'
-          },
           {
             link : 'https://github.com/dunrite/nowpaper',
             title : 'GitHub'
