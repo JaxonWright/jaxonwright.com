@@ -15,8 +15,10 @@ export class ProjectCardComponent implements OnInit {
   imageSource = computed(() => {
     if (this.theme.themeType() == ThemeType.Light && this.project()?.logo) {
       return this.project().logo;
-    } else if (this.project()?.logo) {
+    } else if (this.project()?.darkLogo) {
       return this.project().darkLogo;
+    } else {
+      return this.project().logo ?? '';
     }
   });
 
