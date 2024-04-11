@@ -37,8 +37,6 @@ h4 {
     background-size: cover;
     height: 145px;
     width: 145px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .about-me-card-header {
@@ -55,4 +53,8 @@ h4 {
 
 .mat-mdc-card-subtitle  {
     padding-top: 4px !important;
+}
+
+mat-card.full-width {
+    width: 100%;
 }
