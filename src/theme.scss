@@ -8,38 +8,6 @@
 // @include mat.all-component-typographies();
 @include mat.core();
 
-$mat-black: (
-    50: #000000,
-    100: #000000,
-    500: #000000,
-    700: #000000,
-    contrast: (
-        50: white,
-        100: white,
-        500: white,
-        700: white
-    )
-);
-
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-// (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue. Available color palettes: https://www.google.com/design/spec/style/color.html
-$light-app-primary: mat.define-palette(mat.$grey-palette, 900);
-$light-app-accent:  mat.define-palette(mat.$green-palette, A400);
-
-// The warn palette is optional (defaults to red).
-$app-warn:    mat.define-palette(mat.$red-palette);
-
-// Create the theme object (a Sass map containing all of the palettes).
-// $light-app-theme: mat.define-light-theme((
-//   color: (
-//     primary: $light-app-primary,
-//     accent: $light-app-accent, 
-//     warn: $app-warn
-//   ),
-//   typography: mat.define-typography-config(),
-//   density: 0
-// ));
 $light-app-theme: matx.define-theme((
   color: (
     theme-type: light,
@@ -47,17 +15,6 @@ $light-app-theme: matx.define-theme((
   )
 ));
 
-$dark-app-primary: mat.define-palette(mat.$grey-palette, 50);
-$dark-app-accent:  mat.define-palette(mat.$green-palette, A400);
-// $dark-app-theme: mat.define-dark-theme((
-//   color: (
-//     primary: $dark-app-primary,
-//     accent: $dark-app-accent, 
-//     warn: $app-warn
-//   ),
-//   typography: mat.define-typography-config(),
-//   density: 0
-// ));
 $dark-app-theme: matx.define-theme((
   color: (
     theme-type: dark,
@@ -65,37 +22,12 @@ $dark-app-theme: matx.define-theme((
   )
 ));
 
-$black-app-primary: mat.define-palette($mat-black, 50);
-$black-app-accent:  mat.define-palette(mat.$green-palette, A400);
-// $black-app-theme: mat.define-dark-theme((
-//   color: (
-//     primary: $black-app-primary,
-//     accent: $black-app-accent, 
-//     warn: $app-warn
-//   ),
-//   typography: mat.define-typography-config(),
-//   density: 0
-// ));
-
 $black-app-theme: matx.define-theme((
   color: (
     theme-type: dark,
     primary: matx.$m3-green-palette,
   )
 ));
-
-// The following mixins include base theme styles that are only needed once per application. These
-// theme styles do not depend on the color, typography, or density settings in your theme. However,
-// these styles may differ depending on the theme's design system. Currently all themes use the
-// Material 2 design system, but in the future it may be possible to create theme based on other
-// design systems, such as Material 3.
-//
-// Please note: you do not need to include the 'base' mixins, if you include the corresponding
-// 'theme' mixin elsewhere in your Sass. The full 'theme' mixins already include the base styles.
-//
-// To learn more about "base" theme styles visit our theming guide:
-// https://material.angular.io/guide/theming#theming-dimensions
-// @include mat.sidenav-base($black-app-theme);
 
 html {
   @include mat.core-theme($light-app-theme);
