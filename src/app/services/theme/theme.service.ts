@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 
 export enum ThemeType {
@@ -11,19 +11,19 @@ export enum ThemeType {
   providedIn: 'root'
 })
 export class ThemeService {
-  themeType: ThemeType;
+  themeType = signal<ThemeType>(ThemeType.Black);
 
   constructor(public meta: Meta) { }
 
   set(theme: ThemeType) {
     if (theme == ThemeType.Light) {
-      this.themeType = theme;
+      this.themeType.set(theme);
       this.meta.updateTag({name: 'theme-color', content: "#f5f5f5"});
     } else if (theme == ThemeType.Dark) {
-      this.themeType = theme;
+      this.themeType.set(theme);
       this.meta.updateTag({name: 'theme-color', content: "#262626"});
     } else if (theme == ThemeType.Black) {
-      this.themeType = theme;
+      this.themeType.set(theme);
       this.meta.updateTag({name: 'theme-color', content: "#000000"});
     }
     localStorage.setItem('theme', theme);
@@ -37,22 +37,6 @@ export class ThemeService {
       return theme;
     else localStorage.removeItem('theme');
     return ThemeType.Black;
-  }
-
-  isLight(): boolean {
-    return this.themeType == ThemeType.Light;
-  }
-
-  isDark(): boolean {
-    return this.themeType == ThemeType.Dark;
-  }
-
-  isBlack(): boolean {
-    return this.themeType == ThemeType.Black;
-  }
-
-  getTheme(): ThemeType {
-    return this.themeType;
   }
 
 }

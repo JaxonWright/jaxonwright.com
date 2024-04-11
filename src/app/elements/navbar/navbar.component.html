@@ -1,7 +1,7 @@
 <mat-toolbar >
   <mat-toolbar-row>
     <a mat-button routerLink="" class="logo-button">
-      <img [src]="theme.isDark() || theme.isBlack() ? 'assets/img/branding/white.png' : 'assets/img/branding/dark.png'" class='logo mx-auto'>
+      <img [src]="theme.themeType() == ThemeType.Dark || theme.themeType() == ThemeType.Black ? 'assets/img/branding/white.png' : 'assets/img/branding/dark.png'" class='logo mx-auto'>
     </a>
     <div class="social-button-container">
       <a mat-icon-button href="https://twitter.com/jxn_w"  matTooltip="X" class="social-button">
@@ -13,9 +13,9 @@
     </div>
     <button mat-icon-button class="theme-button" matTooltip="Switch Theme"
       [matMenuTriggerFor]="menu" matTooltipPosition="below" matTooltipClass="mat-tooltip-multi">
-      <mat-icon *ngIf="theme.isLight()">brightness_5</mat-icon>
-      <mat-icon *ngIf="theme.isDark()">dark_mode</mat-icon>
-      <mat-icon *ngIf="theme.isBlack()">nights_stay</mat-icon>
+      <mat-icon *ngIf="theme.themeType() == ThemeType.Light">brightness_5</mat-icon>
+      <mat-icon *ngIf="theme.themeType() == ThemeType.Dark">dark_mode</mat-icon>
+      <mat-icon *ngIf="theme.themeType() == ThemeType.Black">nights_stay</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
       <button mat-menu-item (click)="app.setTheme(ThemeType.Light)">

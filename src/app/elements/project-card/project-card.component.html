@@ -2,14 +2,14 @@
   <mat-card appearance="outlined">
     <mat-card-header>
       <mat-card-title>
-        <img *ngIf="project.logo" class="title-img" [src]="getLogoSource()">
-        <ng-container *ngIf="project.logoOnly == false">
-          <h3>{{project.title}}</h3>
+        <img *ngIf="project().logo" class="title-img" [src]="imageSource()">
+        <ng-container *ngIf="project().logoOnly == false">
+          <h3>{{project().title}}</h3>
         </ng-container>
       </mat-card-title>
       <mat-card-subtitle>
         <mat-chip-listbox>
-          <mat-chip *ngFor="let cat of project.categories">
+          <mat-chip *ngFor="let cat of project().categories">
             <fa-icon [icon]="cat.icon" size="lg" transform="shrink-6.5" [mask]="['fas','circle']"></fa-icon>
             &nbsp;{{cat.title}}
           </mat-chip>
@@ -18,11 +18,11 @@
     </mat-card-header>
     <mat-card-content>
       <p>
-        {{project.description}}
+        {{project().description}}
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <ng-container *ngFor="let action of project.actions">
+      <ng-container *ngFor="let action of project().actions">
         <a mat-button [href]="action.link" target="_blank">{{action.title}}</a>
       </ng-container>
     </mat-card-actions>

@@ -1,7 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, computed, effect, input, signal } from '@angular/core';
 import { Router } from '@angular/router';
-import { AppComponent } from '@app/app.component';
-import { ThemeService } from '@services/theme/theme.service';
+import { ThemeService, ThemeType } from '@services/theme/theme.service';
 import { Project } from '@app/pages/projects/projects.component';
 
 
@@ -12,16 +11,22 @@ import { Project } from '@app/pages/projects/projects.component';
   styleUrls: ['./project-card.component.css']
 })
 export class ProjectCardComponent implements OnInit {
-   @Input('project') project : Project;
-  
-  constructor(public router : Router, public app : AppComponent, public theme : ThemeService) { }
+  project = input<Project>();
+  imageSource = computed(() => {
+    if (this.theme.themeType() == ThemeType.Light && this.project()?.logo) {
+      return this.project().logo;
+    } else if (this.project()?.logo) {
+      return this.project().darkLogo;
+    }
+  });
 
-  ngOnInit() {
+  constructor(
+    public router : Router,
+    public theme : ThemeService) { 
+
   }
 
-  getLogoSource() {
-      if (this.theme.isLight() || !this.project.darkLogo) return this.project.logo;
-      return this.project.darkLogo;
+  ngOnInit() {
   }
 
 }
