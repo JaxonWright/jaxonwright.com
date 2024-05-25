@@ -1,4 +1,3 @@
-import { DatePipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
@@ -31,15 +30,18 @@ export class BuildInfoComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.dependencies = [{name: 'Angular', version: require('@angular/core/package.json').version, link: 'https://www.npmjs.com/package/@angular/core', icon: ['fab',  'angular']},
+    this.dependencies = [
+                         {name: 'Angular', version: require('@angular/core/package.json').version, link: 'https://www.npmjs.com/package/@angular/core', icon: ['fab',  'angular']},
                          {name: 'Angular Material', version: require('@angular/material/package.json').version, link: 'https://www.npmjs.com/package/@angular/material', icon: ['fab', 'angular']},
                          {name: 'RxJS', version: require('rxjs/package.json').version, link: 'https://www.npmjs.com/package/rxjs', icon: ['fab',  'js']},
                          {name: 'TypeScript', version: require('typescript/package.json').version, link: 'https://www.npmjs.com/package/typescript', icon: ['fas', 'code']},
                          {name: 'Angular FontAwesome', version: require('@fortawesome/angular-fontawesome/package.json').version, link: 'https://www.fontawesome.com', icon: ['fab',  'font-awesome']},
-                         {name: 'Bootstrap', version: '4.1.3', link: 'https://www.bootstrap.com', icon: ['fas', 'bold']}];
+                        ];
     
-    this.buildInfo = [{name: 'Hash', version: VERSION.hash, link: `https://github.com/JaxonWright/jaxonwright.com/commit/${VERSION.hash}`, icon: ['fas', 'hashtag']},
-                      {name: 'Date', version: this.buildDate, link: '', icon: ['fas', 'calendar']}]
+    this.buildInfo = [
+                      {name: 'Hash', version: VERSION.hash, link: `https://github.com/JaxonWright/jaxonwright.com/commit/${VERSION.hash}`, icon: ['fas', 'hashtag']},
+                      {name: 'Date', version: this.buildDate, link: '', icon: ['fas', 'calendar']}
+                     ]
 
   }
 
