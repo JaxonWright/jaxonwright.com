@@ -8,24 +8,24 @@
 // @include mat.all-component-typographies();
 @include mat.core();
 
-$light-app-theme: matx.define-theme((
+$light-app-theme: mat.define-theme((
   color: (
     theme-type: light,
-    primary: matx.$m3-green-palette,
+    primary: mat.$green-palette,
   )
 ));
 
-$dark-app-theme: matx.define-theme((
+$dark-app-theme: mat.define-theme((
   color: (
     theme-type: dark,
-    primary: matx.$m3-green-palette,
+    primary: mat.$green-palette,
   )
 ));
 
-$black-app-theme: matx.define-theme((
+$black-app-theme: mat.define-theme((
   color: (
     theme-type: dark,
-    primary: matx.$m3-green-palette,
+    primary: mat.$green-palette,
   )
 ));
 
