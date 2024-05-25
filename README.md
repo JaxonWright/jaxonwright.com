@@ -25,7 +25,7 @@ This is a script defined in the package.json. You may want to change the base-hr
 
 
 ### Deploying
-Deployment is automatically ran by the Github Action within this repository. It will run on any push or pull request for the `master` branch.
+Deployment is automatically ran by Cloudflare Pages when the `master` branch has changes pushed to it.
 
 
 ### License
