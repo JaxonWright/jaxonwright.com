@@ -25,17 +25,12 @@ import {MatIconModule} from '@angular/material/icon';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-import { CryptoDialogComponent } from '@dialogs/crypto-dialog/crypto-dialog.component';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { ThemeService } from '@services/theme/theme.service';
 import { BuildInfoComponent } from '@pages/build-info/build-info.component';
 import { IconsModule } from './icons.module';
 import { RoutesModule } from './routes.module';
 import { ProjectCardComponent } from './elements/project-card/project-card.component';
-import { QRCodeModule } from 'angularx-qrcode';
-
-
-
 
 @NgModule({
     declarations: [
@@ -46,7 +41,6 @@ import { QRCodeModule } from 'angularx-qrcode';
         NavbarComponent,
         FooterComponent,
         ContactComponent,
-        CryptoDialogComponent,
         BuildInfoComponent,
         ProjectCardComponent,
     ],
@@ -69,7 +63,6 @@ import { QRCodeModule } from 'angularx-qrcode';
         OverlayModule,
         MatMenuModule,
         MatIconModule,
-        QRCodeModule,
     ],
     providers: [
         ThemeService
