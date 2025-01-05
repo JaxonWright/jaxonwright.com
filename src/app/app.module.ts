@@ -33,17 +33,7 @@ import { RoutesModule } from './routes.module';
 import { ProjectCardComponent } from './elements/project-card/project-card.component';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        HomeComponent,
-        ProjectsComponent,
-        PageNotFoundComponent,
-        NavbarComponent,
-        FooterComponent,
-        ContactComponent,
-        BuildInfoComponent,
-        ProjectCardComponent,
-    ],
+    declarations: [AppComponent],
     imports: [
         FontAwesomeModule,
         IconsModule,
@@ -63,6 +53,14 @@ import { ProjectCardComponent } from './elements/project-card/project-card.compo
         OverlayModule,
         MatMenuModule,
         MatIconModule,
+        HomeComponent,
+        ProjectsComponent,
+        PageNotFoundComponent,
+        NavbarComponent,
+        FooterComponent,
+        ContactComponent,
+        BuildInfoComponent,
+        ProjectCardComponent,
     ],
     providers: [
         ThemeService
