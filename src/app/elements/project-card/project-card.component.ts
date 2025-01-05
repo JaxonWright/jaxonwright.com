@@ -6,9 +6,10 @@ import { Project } from '@app/pages/projects/projects.component';
 
 
 @Component({
-  selector: 'app-project-card',
-  templateUrl: './project-card.component.html',
-  styleUrls: ['./project-card.component.css']
+    selector: 'app-project-card',
+    templateUrl: './project-card.component.html',
+    styleUrls: ['./project-card.component.css'],
+    standalone: false
 })
 export class ProjectCardComponent implements OnInit {
   project = input<Project>();

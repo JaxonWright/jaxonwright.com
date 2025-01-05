@@ -2,9 +2,10 @@ import { Component, OnInit, computed } from '@angular/core';
 import { ThemeService, ThemeType } from '../../services/theme/theme.service';
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css']
+    selector: 'app-footer',
+    templateUrl: './footer.component.html',
+    styleUrls: ['./footer.component.css'],
+    standalone: false
 })
 export class FooterComponent implements OnInit {
   currentYear : number;

@@ -4,9 +4,10 @@ import { AppComponent } from '@app/app.component';
 import { ThemeService, ThemeType } from '@services/theme/theme.service';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+    selector: 'app-navbar',
+    templateUrl: './navbar.component.html',
+    styleUrls: ['./navbar.component.css'],
+    standalone: false
 })
 export class NavbarComponent {
   ThemeType = ThemeType;

@@ -24,10 +24,11 @@ export interface Action {
 }
 
 @Component({
-  selector: 'app-projects',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+    selector: 'app-projects',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    templateUrl: './projects.component.html',
+    styleUrls: ['./projects.component.css'],
+    standalone: false
 })
 export class ProjectsComponent implements OnInit {
   projects : Project[];

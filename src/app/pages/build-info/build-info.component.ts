@@ -12,10 +12,11 @@ export interface Dependency {
 }
 
 @Component({
-  selector: 'app-build-info',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  templateUrl: './build-info.component.html',
-  styleUrls: ['./build-info.component.css']
+    selector: 'app-build-info',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    templateUrl: './build-info.component.html',
+    styleUrls: ['./build-info.component.css'],
+    standalone: false
 })
 export class BuildInfoComponent implements OnInit {
   dependencies : Dependency[];
