@@ -5,7 +5,8 @@
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
 // @include mat.all-component-typographies();
-@include mat.core();
+@include mat.elevation-classes();
+@include mat.app-background();
 
 $light-app-theme: mat.define-theme((
   color: (
@@ -29,7 +30,8 @@ $black-app-theme: mat.define-theme((
 ));
 
 html {
-  @include mat.core-theme($light-app-theme);
+  @include mat.elevation-classes();
+  @include mat.app-background();
   @include mat.toolbar-theme($light-app-theme);
   @include mat.button-theme($light-app-theme);
   @include mat.icon-button-theme($light-app-theme);
@@ -48,7 +50,8 @@ html {
 }
 
 .black-theme {
-  @include mat.core-color($black-app-theme);
+  @include mat.elevation-classes();
+  @include mat.app-background();
   @include mat.toolbar-color($black-app-theme);
   @include mat.button-color($black-app-theme);
   @include mat.icon-button-color($black-app-theme);
@@ -73,7 +76,8 @@ html {
 }
 
 .dark-theme {
-  @include mat.core-color($dark-app-theme);
+  @include mat.elevation-classes();
+  @include mat.app-background();
   @include mat.toolbar-color($dark-app-theme);
   @include mat.button-color($dark-app-theme);
   @include mat.icon-button-color($dark-app-theme);
@@ -93,7 +97,8 @@ html {
 }
 
 .light-theme {
-  @include mat.core-color($light-app-theme);
+  @include mat.elevation-classes();
+  @include mat.app-background();
   @include mat.toolbar-color($light-app-theme);
   @include mat.button-color($light-app-theme);
   @include mat.icon-button-color($light-app-theme);
